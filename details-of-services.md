@@ -1,6 +1,6 @@
 # ความสามารถ ขอบเขต และการนำไปใช้งานของบริการ AWS ที่อยู่ในขอบเขต Cloud Practitioner
 
-> เอกสารนี้อ้างอิงตาม Exam Guide CLF-C02 จัดทำเพื่อเสริมความเข้าใจรายละเอียดของ AWS Services แต่ละรายการ ครอบคลุมความสามารถหลัก (Capabilities) ขอบเขตการใช้งาน (Scope) และตัวอย่างการนำไปใช้ (Use Cases)
+> เอกสารนี้อ้างอิงตาม Exam Guide CLF-C02 จัดทำเพื่อเสริมความเข้าใจรายละเอียดของ AWS Services แต่ละรายการ ครอบคลุมความสามารถหลัก (Capabilities) ขอบเขตการใช้งาน (Scope) และตัวอย่างการนำไปใช้ (Use Cases) พร้อมลิงค์อ้างอิงไปยัง AWS Pricing Calculator และ Product Page
 
 ---
 
@@ -25,6 +25,7 @@
 17. [Security, Identity, and Compliance](#17-security-identity-and-compliance)
 18. [Serverless](#18-serverless)
 19. [Storage](#19-storage)
+20. [Quick Reference Links](#20-quick-reference-links)
 
 ---
 
@@ -37,6 +38,8 @@
 
 **Use Cases:** วิเคราะห์ log จาก S3, BI reports, ad-hoc queries บน data lake
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/athena) | [Product Page](https://aws.amazon.com/athena/)
+
 ---
 
 ### Amazon EMR (Elastic MapReduce)
@@ -45,6 +48,8 @@
 **ขอบเขต:** รองรับหลาย framework, สามารถใช้ spot instances เพื่อลดต้นทุน, ทำงานร่วมกับ S3 เป็น data layer
 
 **Use Cases:** Data processing ขนาดใหญ่, machine learning, log analysis, real-time streaming
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/elastic-map-reduce) | [Product Page](https://aws.amazon.com/emr/)
 
 ---
 
@@ -55,6 +60,8 @@
 
 **Use Cases:** Data lake building, data migration, data preparation ก่อน analytics
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/glue) | [Product Page](https://aws.amazon.com/glue/)
+
 ---
 
 ### Amazon Kinesis
@@ -63,6 +70,8 @@
 **ขอบเขต:** Kinesis Data Firehose ส่งข้อมูลไป S3/Redshift/ES โดยอัตโนมัติ, Kinesis Data Analytics สำหรับ SQL queries บน streaming data
 
 **Use Cases:** IoT telemetry, log ingestion, real-time dashboards, fraud detection, live leaderboards
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/kinesis-data-streams) | [Product Page](https://aws.amazon.com/kinesis/)
 
 ---
 
@@ -73,6 +82,8 @@
 
 **Use Cases:** Application search, log analytics, security analytics, monitoring
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-opensearch-service) | [Product Page](https://aws.amazon.com/opensearch-service/)
+
 ---
 
 ### Amazon QuickSight
@@ -82,6 +93,8 @@
 
 **Use Cases:** Executive dashboards, sales analytics, operational reporting, self-service BI
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/quicksight) | [Product Page](https://aws.amazon.com/quicksight/)
+
 ---
 
 ### Amazon Redshift
@@ -90,6 +103,8 @@
 **ขอบเขต:** รองรับ complex queries, federated queries กับ S3 และ operational DBs, ML-based optimization
 
 **Use Cases:** Enterprise data warehousing, business intelligence, data analytics
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-redshift) | [Product Page](https://aws.amazon.com/redshift/)
 
 ---
 
@@ -102,6 +117,8 @@
 
 **Use Cases:** Microservices communication, SaaS integration, audit logging, real-time notifications
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-eventbridge) | [Product Page](https://aws.amazon.com/eventbridge/)
+
 ---
 
 ### Amazon SNS (Simple Notification Service)
@@ -110,6 +127,8 @@
 **ขอบเขต:** Topics-based pub/sub, push-based delivery, รองรับ FIFO topics, รองรับ SMS และ email
 
 **Use Cases:** Application alerts, fanout messaging, mobile push notifications, event-driven workflows
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-sns) | [Product Page](https://aws.amazon.com/sns/)
 
 ---
 
@@ -120,6 +139,8 @@
 
 **Use Cases:** Decoupling microservices, batch processing, task queues, request buffering
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-sqs) | [Product Page](https://aws.amazon.com/sqs/)
+
 ---
 
 ### AWS Step Functions
@@ -128,6 +149,8 @@
 **ขอบเขต:** รองรับ 200+ AWS service integrations, error handling, retry logic, branching, parallel execution
 
 **Use Cases:** Workflow automation, order processing, data processing pipelines, ETL orchestration
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/step-functions) | [Product Page](https://aws.amazon.com/step-functions/)
 
 ---
 
@@ -140,6 +163,8 @@
 
 **Use Cases:** Customer support centers, sales hotlines, help desks, outbound campaigns
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-connect) | [Product Page](https://aws.amazon.com/connect/)
+
 ---
 
 ### Amazon SES (Simple Email Service)
@@ -148,6 +173,8 @@
 **ขอบเขต:** ใช้ SMTP หรือ AWS SDK, DKIM/SPF verification, sandbox mode สำหรับทดสอบ, dedicated IPs สำหรับ reputation
 
 **Use Cases:** Transactional emails, marketing campaigns, system notifications, bounce/complaint handling
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-ses) | [Product Page](https://aws.amazon.com/ses/)
 
 ---
 
@@ -160,6 +187,8 @@
 
 **Use Cases:** Cost monitoring, spend alerts, RI utilization tracking, anomaly detection
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-budgets) | [Product Page](https://aws.amazon.com/aws-cost-management/aws-budgets/)
+
 ---
 
 ### AWS Cost Explorer
@@ -169,6 +198,8 @@
 
 **Use Cases:** Cost trend analysis, cost attribution by team/project, cost optimization planning
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-cost-explorer) | [Product Page](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
+
 ---
 
 ### AWS Pricing Calculator
@@ -177,6 +208,8 @@
 **ขอบเขต:** รองรับ almost all AWS services, ปรับ usage parameters ได้, export เป็น CSV
 
 **Use Cases:** Budget planning, project cost estimation, architecture cost comparison
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws) | [Product Page](https://aws.amazon.com/pricing/calculator/)
 
 ---
 
@@ -188,6 +221,8 @@
 **ขอบเขต:** รองรับ EC2 Auto Scaling Groups, ECS tasks, DynamoDB tables/indexes, Aurora replicas
 
 **Use Cases:** Variable workloads, batch processing, web applications with traffic spikes
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/auto-scaling) | [Product Page](https://aws.amazon.com/autoscaling/)
 
 ---
 
@@ -201,6 +236,8 @@
 
 **Use Cases:** Web servers, databases, ML inference, batch processing, enterprise applications
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/ec2-enhancement) | [Product Page](https://aws.amazon.com/ec2/)
+
 ---
 
 ### Amazon ECS (Elastic Container Service)
@@ -209,6 +246,8 @@
 **ขอบเขต:** รองรับ Docker Compose, service discovery, load balancing, auto scaling, IAM roles per task
 
 **Use Cases:** Microservices deployment, batch jobs, long-running applications, containerized web apps
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-ecs) | [Product Page](https://aws.amazon.com/ecs/)
 
 ---
 
@@ -219,6 +258,8 @@
 
 **Use Cases:** Enterprise Kubernetes workloads, hybrid cloud, cloud-native applications requiring Kubernetes
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-eks) | [Product Page](https://aws.amazon.com/eks/)
+
 ---
 
 ### AWS Elastic Beanstalk
@@ -227,6 +268,8 @@
 **ขอบเขต:** รองรับ many platforms, environment management, rolling updates, monitoring
 
 **Use Cases:** Quick application deployment, developers who want less ops overhead, prototypes
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/elastic-beanstalk) | [Product Page](https://aws.amazon.com/elasticbeanstalk/)
 
 ---
 
@@ -237,6 +280,8 @@
 
 **Use Cases:** Serverless containers, microservices, periodic batch jobs, cost-sensitive workloads
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-fargate) | [Product Page](https://aws.amazon.com/fargate/)
+
 ---
 
 ### AWS Lambda
@@ -245,6 +290,8 @@
 **ขอบเขต:** รองรับ many languages (Node.js, Python, Java, Go, Ruby, .NET, custom runtimes), 15-min max execution time, 10GB max memory per function, ephemeral storage 512MB-10GB
 
 **Use Cases:** Event-driven processing, API backends, data processing, automation, real-time file processing
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/lambda) | [Product Page](https://aws.amazon.com/lambda/)
 
 ---
 
@@ -256,6 +303,8 @@
 **ขอบเขต:** Highly available, encryption at rest, image scanning, lifecycle policies, pull-through cache
 
 **Use Cases:** Container image storage, CI/CD pipelines, private image registries
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-ecr) | [Product Page](https://aws.amazon.com/ecr/)
 
 ---
 
@@ -274,6 +323,8 @@
 
 **Use Cases:** AWS skill development, certification preparation, team training
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-training) | [Product Page](https://aws.amazon.com/training/)
+
 ---
 
 ### AWS Skill Builder
@@ -282,6 +333,8 @@
 **ขอบเขต:** Individual learning plans, role-based learning paths, hands-on labs, exam prep
 
 **Use Cases:** Self-paced learning, certification prep, hands-on practice
+
+**ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/training/learn/)
 
 ---
 
@@ -294,6 +347,8 @@
 
 **Use Cases:** Enterprise applications, SaaS applications, e-commerce, gaming
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aurora) | [Product Page](https://aws.amazon.com/rds/aurora/)
+
 ---
 
 ### Amazon DynamoDB
@@ -302,6 +357,8 @@
 **ขอบเขต:** On-demand หรือ provisioned capacity modes, Global Tables (multi-region), DAX (in-memory cache), DynamoDB Streams, encryption at rest
 
 **Use Cases:** Web and mobile backends, gaming, IoT, real-time bidding, microservices
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/dynamodb) | [Product Page](https://aws.amazon.com/dynamodb/)
 
 ---
 
@@ -312,6 +369,8 @@
 
 **Use Cases:** Session stores, caching, leaderboards, real-time analytics, message queues
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-elasticache) | [Product Page](https://aws.amazon.com/elasticache/)
+
 ---
 
 ### Amazon RDS (Relational Database Service)
@@ -320,6 +379,8 @@
 **ขอบเขต:** Multi-AZ deployments, Read Replicas, automated backups, automated software patching, DB Subnet Groups
 
 **Use Cases:** Traditional web applications, e-commerce, CMS, business applications
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/rds) | [Product Page](https://aws.amazon.com/rds/)
 
 ---
 
@@ -330,6 +391,8 @@
 
 **Use Cases:** Cloud migration, database modernization, development environment creation
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-dms) | [Product Page](https://aws.amazon.com/dms/)
+
 ---
 
 ### AWS SCT (Schema Conversion Tool)
@@ -338,6 +401,8 @@
 **ขอบเขต:** รองรับ heterogeneous conversions, วิเคราะห์ complexity ของ conversion, สร้าง assessment report
 
 **Use Cases:** Database schema migration, heterogeneous to homogeneous migration
+
+**ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/dms/schema-conversion-tool/)
 
 ---
 
@@ -350,6 +415,8 @@
 
 **Use Cases:** CI/CD pipelines, automated builds, container builds, batch compilation
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/codebuild) | [Product Page](https://aws.amazon.com/codebuild/)
+
 ---
 
 ### AWS CodePipeline
@@ -359,6 +426,8 @@
 
 **Use Cases:** CI/CD pipelines, release automation, multi-stage deployments
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/codepipeline) | [Product Page](https://aws.amazon.com/codepipeline/)
+
 ---
 
 ### AWS X-Ray
@@ -367,6 +436,8 @@
 **ขอบเขต:** Request tracing, service maps, latency analysis, annotations, sampling controls
 
 **Use Cases:** Distributed system debugging, performance optimization, production issue investigation
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/x-ray) | [Product Page](https://aws.amazon.com/xray/)
 
 ---
 
@@ -379,6 +450,8 @@
 
 **Use Cases:** Remote work, legacy application access, software training, contract workers
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/appstream2) | [Product Page](https://aws.amazon.com/appstream2/)
+
 ---
 
 ### Amazon WorkSpaces
@@ -388,6 +461,8 @@
 
 **Use Cases:** Remote employees, contractors, temporary workers, secure desktop environments
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-workspaces) | [Product Page](https://aws.amazon.com/workspaces/)
+
 ---
 
 ### Amazon WorkSpaces Secure Browser
@@ -396,6 +471,8 @@
 **ขอบเขต:** Zero trust architecture, no data stored on endpoints, integrated with IAM, cloud-hosted browsers
 
 **Use Cases:** Secure browsing, contractor access, BYOD environments, regulated industries
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-workspaces-web) | [Product Page](https://aws.amazon.com/workspaces/web/)
 
 ---
 
@@ -408,6 +485,8 @@
 
 **Use Cases:** Web apps, React/Vue/Angular apps, mobile apps (iOS/Android), JAMstack
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-amplify) | [Product Page](https://aws.amazon.com/amplify/)
+
 ---
 
 ### AWS AppSync
@@ -416,6 +495,8 @@
 **ขอบเขต:** Real-time subscriptions, offline sync (Amplify DataStore), fine-grained access control, Lambda resolvers
 
 **Use Cases:** Mobile backends, real-time collaboration apps, IoT dashboards, microservices integration
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-appsync) | [Product Page](https://aws.amazon.com/appsync/)
 
 ---
 
@@ -428,6 +509,8 @@
 
 **Use Cases:** Smart home, industrial IoT, connected vehicles, asset tracking
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-iot-core) | [Product Page](https://aws.amazon.com/iot-core/)
+
 ---
 
 ## 13. Machine Learning
@@ -439,6 +522,8 @@
 
 **Use Cases:** Customer service chatbots, IVR replacement, enterprise assistants, mobile apps
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-lex) | [Product Page](https://aws.amazon.com/lex/)
+
 ---
 
 ### Amazon Kendra
@@ -448,6 +533,8 @@
 
 **Use Cases:** Enterprise knowledge management, document search, customer support search, research portals
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-kendra) | [Product Page](https://aws.amazon.com/kendra/)
+
 ---
 
 ### Amazon SageMaker AI
@@ -456,6 +543,8 @@
 **ขอบเขต:** SageMaker Studio (IDE), Ground Truth (data labeling), Autopilot (auto-ML), Neo (model optimization), JumpStart (pre-built models)
 
 **Use Cases:** Custom model training, pre-built AI applications, MLOps, real-time and batch inference
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/sagemaker) | [Product Page](https://aws.amazon.com/sagemaker/)
 
 ---
 
@@ -470,6 +559,8 @@
 
 **Use Cases:** Infrastructure provisioning, environment recreation, disaster recovery
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/cloudformation) | [Product Page](https://aws.amazon.com/cloudformation/)
+
 ---
 
 ### AWS CloudTrail
@@ -478,6 +569,8 @@
 **ขอบเขต:** Management events, data events, insights events, CloudTrail Lake (queryable log storage), multi-region trails
 
 **Use Cases:** Security analysis, incident investigation, compliance audit, operational troubleshooting
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/cloudtrail) | [Product Page](https://aws.amazon.com/cloudtrail/)
 
 ---
 
@@ -493,6 +586,8 @@
 
 **Use Cases:** Infrastructure monitoring, application performance monitoring, log analysis, alerting
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/cloudwatch) | [Product Page](https://aws.amazon.com/cloudwatch/)
+
 ---
 
 ### AWS Compute Optimizer
@@ -501,6 +596,8 @@
 **ขอบเขต:** Rightsizing recommendations, utilization data analysis, refresh recommendations, Savings Plans recommendations
 
 **Use Cases:** Cost optimization, performance improvement, resource rightsizing
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/compute-optimizer) | [Product Page](https://aws.amazon.com/compute-optimizer/)
 
 ---
 
@@ -511,6 +608,8 @@
 
 **Use Cases:** Compliance auditing, security analysis, change management, inventory management
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/config) | [Product Page](https://aws.amazon.com/config/)
+
 ---
 
 ### AWS Control Tower
@@ -519,6 +618,8 @@
 **ขอบเขต:** Account Factory, Guardrails (preventive/detective), Dashboard, Enrollment, Service Catalog portfolios
 
 **Use Cases:** Enterprise multi-account governance, regulated environments, new AWS onboarding
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-control-tower) | [Product Page](https://aws.amazon.com/controltower/)
 
 ---
 
@@ -529,6 +630,8 @@
 
 **Use Cases:** Proactive issue awareness, incident response, SLA monitoring
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-health) | [Product Page](https://aws.amazon.com/health/)
+
 ---
 
 ### AWS License Manager
@@ -537,6 +640,8 @@
 **ขอบเขต:** License tracking, vendor-specific rules (Oracle, SQL Server, SAP), BYOL support, shared enforcement
 
 **Use Cases:** License compliance, vendor audits, license optimization
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-license-manager) | [Product Page](https://aws.amazon.com/license-manager/)
 
 ---
 
@@ -547,14 +652,18 @@
 
 **Use Cases:** Daily AWS management, resource exploration, basic operations
 
+**ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/console/)
+
 ---
 
 ### AWS Organizations
 **ความสามารถ:** Account management service สำหรับ central governance และ management ของ multiple AWS accounts
 
-**ขอบเขต:** Organizational Units (OUs), Service Control Policies (SCPs), SCPs, Consolidated Billing, AI Services Opt-Out Policies, Tag policies
+**ขอบเขต:** Organizational Units (OUs), Service Control Policies (SCPs), Consolidated Billing, AI Services Opt-Out Policies, Tag policies
 
 **Use Cases:** Multi-account strategy, centralized billing, security baselines, departmental cost tracking
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-organizations) | [Product Page](https://aws.amazon.com/organizations/)
 
 ---
 
@@ -565,6 +674,8 @@
 
 **Use Cases:** Self-service provisioning, standard environment deployment, compliance enforcement
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-service-catalog) | [Product Page](https://aws.amazon.com/servicecatalog/)
+
 ---
 
 ### Service Quotas
@@ -573,6 +684,8 @@
 **ขอบเขต:** AWS Console และ API, template-based requests, Trusted Advisor integration for quotas
 
 **Use Cases:** Capacity planning, quota monitoring, resource limit management
+
+**ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/servicequotas/)
 
 ---
 
@@ -590,6 +703,8 @@
 
 **Use Cases:** Fleet management, patch management, secrets management, operational automation
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/systems-manager) | [Product Page](https://aws.amazon.com/systems-manager/)
+
 ---
 
 ### AWS Trusted Advisor
@@ -599,6 +714,8 @@
 
 **Use Cases:** Cost optimization, security hardening, performance tuning, limit monitoring
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/trusted-advisor) | [Product Page](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/)
+
 ---
 
 ### AWS Well-Architected Tool
@@ -607,6 +724,8 @@
 **ขอบเขต:** Workload reviews, lens extensions, improvement plans, milestone tracking
 
 **Use Cases:** Architecture review, risk assessment, continuous improvement
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/wellarchitectedtool) | [Product Page](https://aws.amazon.com/wellarchitected-tool/)
 
 ---
 
@@ -619,6 +738,8 @@
 
 **Use Cases:** Migration planning, data center assessment, dependency analysis
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/application-discovery-service) | [Product Page](https://aws.amazon.com/application-discovery/)
+
 ---
 
 ### AWS Application Migration Service (MGN)
@@ -627,6 +748,8 @@
 **ขอบเขต:** Continuous replication, cutover planning, validation, ใช้ Agent MGN Client
 
 **Use Cases:** Large-scale migrations, data center exit, cloud migration projects
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-application-migration-service) | [Product Page](https://aws.amazon.com/application-migration-service/)
 
 ---
 
@@ -639,6 +762,8 @@
 
 **Use Cases:** Migration business case, cost comparison, strategic planning
 
+**ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/migration-evaluator/)
+
 ---
 
 ### AWS Migration Hub
@@ -647,6 +772,8 @@
 **ขอบเขต:** Migration tracking, unified view, tool integrations (MGN, DMS, etc.)
 
 **Use Cases:** Large migration program management, progress tracking, tool consolidation
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-migration-hub) | [Product Page](https://aws.amazon.com/migration-hub/)
 
 ---
 
@@ -663,6 +790,8 @@
 
 **Use Cases:** Data center migration, disaster recovery, remote site data transfer, edge computing
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/snowball) | [Product Page](https://aws.amazon.com/snow/)
+
 ---
 
 ## 16. Networking and Content Delivery
@@ -674,6 +803,8 @@
 
 **Use Cases:** Serverless APIs, microservices backends, mobile backends, real-time applications
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-api-gateway) | [Product Page](https://aws.amazon.com/api-gateway/)
+
 ---
 
 ### Amazon CloudFront
@@ -682,6 +813,8 @@
 **ขอบเขต:** Global network of 600+ PoPs, SNI-based TLS, Lambda@Edge, Origin Access Control (OAC), RTMP distribution (legacy), Functions
 
 **Use Cases:** Static content delivery, video streaming, dynamic content, API acceleration, malware protection
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/cloudfront) | [Product Page](https://aws.amazon.com/cloudfront/)
 
 ---
 
@@ -692,6 +825,8 @@
 
 **Use Cases:** Hybrid cloud, large data transfers, consistent network performance, compliance requirements
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/directconnect) | [Product Page](https://aws.amazon.com/directconnect/)
+
 ---
 
 ### Amazon Route 53
@@ -700,6 +835,8 @@
 **ขอบเขต:** DNS records (A, AAAA, CNAME, MX, TXT, etc.), health checks, routing policies (Simple, Weighted, Latency, Geolocation, Failover, IP-based), domain registration, Route 53 Resolver
 
 **Use Cases:** DNS management, domain registration, health check-based routing, disaster recovery
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/route53) | [Product Page](https://aws.amazon.com/route53/)
 
 ---
 
@@ -712,6 +849,8 @@
 
 **Use Cases:** Hybrid cloud connectivity, remote access, site-to-site connections
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/vpn) | [Product Page](https://aws.amazon.com/vpn/)
+
 ---
 
 ### Amazon VPC (Virtual Private Cloud)
@@ -722,6 +861,8 @@
 - **Features:** VPC CIDR blocks, DHCP options, DNS settings, IP addressing (IPv4/IPv6), VPC Flow Logs, Traffic Mirroring
 
 **Use Cases:** Isolated workloads, multi-tier applications, hybrid cloud, compliance isolation
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/vpc) | [Product Page](https://aws.amazon.com/vpc/)
 
 ---
 
@@ -734,6 +875,8 @@
 
 **Use Cases:** Compliance evidence gathering, security reviews, regulatory audits
 
+**ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/artifact/)
+
 ---
 
 ### AWS Audit Manager
@@ -742,6 +885,8 @@
 **ขอบเขต:** Pre-built frameworks (SOC, PCI, GDPR, etc.), custom frameworks, automated evidence collection, assessment reports
 
 **Use Cases:** Continuous compliance, audit preparation, control testing automation
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/audit-manager) | [Product Page](https://aws.amazon.com/audit-manager/)
 
 ---
 
@@ -752,6 +897,8 @@
 
 **Use Cases:** HTTPS for websites, API security, encrypted communications
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/acm) | [Product Page](https://aws.amazon.com/certificate-manager/)
+
 ---
 
 ### AWS CloudHSM
@@ -760,6 +907,8 @@
 **ขอบเขต:** FIPS 140-2 Level 3, PKCS#11, JCE, CNSA compliant, dedicated hardware, no AWS access to keys
 
 **Use Cases:** Cryptographic operations, key storage for compliance, DNSSEC, code signing
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/cloudhsm) | [Product Page](https://aws.amazon.com/cloudhsm/)
 
 ---
 
@@ -770,6 +919,8 @@
 
 **Use Cases:** Web/mobile app auth, microservice auth, B2C apps, access to AWS resources
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-cognito) | [Product Page](https://aws.amazon.com/cognito/)
+
 ---
 
 ### Amazon Detective
@@ -778,6 +929,8 @@
 **ขอบเขต:** Integrates with CloudTrail, VPC Flow Logs, GuardDuty findings, visual graphs, timeline analysis
 
 **Use Cases:** Security investigations, root cause analysis, behavioral analysis
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/detective) | [Product Page](https://aws.amazon.com/detective/)
 
 ---
 
@@ -791,6 +944,8 @@
 
 **Use Cases:** Windows workloads, SSO, user management, application authentication
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-directory-service) | [Product Page](https://aws.amazon.com/directoryservice/)
+
 ---
 
 ### AWS Firewall Manager
@@ -800,6 +955,8 @@
 
 **Use Cases:** Multi-account security management, organization-wide firewall policies
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-firewall-manager) | [Product Page](https://aws.amazon.com/firewall-manager/)
+
 ---
 
 ### Amazon GuardDuty
@@ -808,6 +965,8 @@
 **ขอบเขต:** CloudTrail event logs, VPC Flow Logs, DNS logs, EKS audit logs, S3 data events, malware protection (S3)
 
 **Use Cases:** Continuous threat detection, compromised credentials, cryptocurrency mining, data exfiltration
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/guardduty) | [Product Page](https://aws.amazon.com/guardduty/)
 
 ---
 
@@ -821,6 +980,8 @@
 
 **Use Cases:** Permission management, least privilege enforcement, cross-account access, federation
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/iam) | [Product Page](https://aws.amazon.com/iam/)
+
 ---
 
 ### AWS IAM Identity Center
@@ -829,6 +990,8 @@
 **ขอบเขต:** SSO to AWS accounts, SAML 2.0 applications, IAM Identity Center directory, Permission Sets, MFA
 
 **Use Cases:** Enterprise SSO, multi-account management, SaaS application access
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/sso) | [Product Page](https://aws.amazon.com/iam/identity-center/)
 
 ---
 
@@ -839,6 +1002,8 @@
 
 **Use Cases:** Vulnerability scanning, security posture, compliance checking
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/inspector) | [Product Page](https://aws.amazon.com/inspector/)
+
 ---
 
 ### AWS Key Management Service (KMS)
@@ -847,6 +1012,8 @@
 **ขอบเขต:** Symmetric keys (AES-256), Asymmetric keys (RSA, ECC), AWS managed keys, Customer managed keys, Custom key stores (CloudHSM), Key rotation, FIPS 140-2 Level 2/3
 
 **Use Cases:** Data encryption, compliance, key rotation, envelope encryption
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/kms) | [Product Page](https://aws.amazon.com/kms/)
 
 ---
 
@@ -857,6 +1024,8 @@
 
 **Use Cases:** Data loss prevention, compliance, sensitive data discovery, privacy protection
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/amazon-macie) | [Product Page](https://aws.amazon.com/macie/)
+
 ---
 
 ### AWS Resource Access Manager (RAM)
@@ -865,6 +1034,8 @@
 **ขอบเขต:** Resource sharing (VPC subnets, Transit Gateways, License configs, etc.), Organizational units sharing
 
 **Use Cases:** Multi-account resource sharing, VPC sharing, shared services
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/ram) | [Product Page](https://aws.amazon.com/ram/)
 
 ---
 
@@ -875,6 +1046,8 @@
 
 **Use Cases:** Application credentials, database passwords, API keys, certificates
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/secrets-manager) | [Product Page](https://aws.amazon.com/secrets-manager/)
+
 ---
 
 ### AWS Security Hub
@@ -883,6 +1056,8 @@
 **ขอบเขต:** Security standards (CIS, PCI DSS, AWS FSBP), Integrations (GuardDuty, Inspector, Macie, partner products), Automated remediation, Findings aggregation
 
 **Use Cases:** Centralized security visibility, compliance monitoring, security operations
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/security-hub) | [Product Page](https://aws.amazon.com/security-hub/)
 
 ---
 
@@ -895,6 +1070,8 @@
 
 **Use Cases:** DDoS protection, availability protection, critical applications protection
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/shield) | [Product Page](https://aws.amazon.com/shield/)
+
 ---
 
 ### AWS WAF (Web Application Firewall)
@@ -903,6 +1080,8 @@
 **ขอบเขต:** Web ACLs, Rules (managed rules, custom rules), Rate limiting, IP blocking, geo-blocking, Bot Control, Captcha
 
 **Use Cases:** Web application security, OWASP Top 10 protection, API protection, bot mitigation
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/waf) | [Product Page](https://aws.amazon.com/waf/)
 
 ---
 
@@ -927,6 +1106,8 @@
 
 **Use Cases:** Database storage, boot volumes, enterprise applications, data warehouses
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/ebs) | [Product Page](https://aws.amazon.com/ebs/)
+
 ---
 
 ### Amazon EFS (Elastic File System)
@@ -935,6 +1116,8 @@
 **ขอบเขต:** Standard and Infrequent Access classes, Encryption at rest, Performance mode (General Purpose/Max I/O), Throughput mode (Bursting/Provisioned), Access via mount targets in VPC
 
 **Use Cases:** Container storage, CMS, ML workloads, shared file storage, home directories
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/efs) | [Product Page](https://aws.amazon.com/efs/)
 
 ---
 
@@ -949,6 +1132,8 @@
 
 **Use Cases:** Windows-based workloads, HPC, media processing, analytics, lift-and-shift Windows apps
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/fsx) | [Product Page](https://aws.amazon.com/fsx/)
+
 ---
 
 ### Amazon S3 (Simple Storage Service)
@@ -960,6 +1145,8 @@
 - **Security:** Block Public Access, ACLs, Policies, Encryption (SSE-S3, SSE-KMS, SSE-C), Access Points, MFA Delete
 
 **Use Cases:** Data lakes, backup and restore, archive, disaster recovery, static website hosting, big data analytics
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/s3) | [Product Page](https://aws.amazon.com/s3/)
 
 ---
 
@@ -974,6 +1161,8 @@
 
 **Use Cases:** Hybrid cloud storage, backup to cloud, tiered storage, disaster recovery
 
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/storage-gateway) | [Product Page](https://aws.amazon.com/storagegateway/)
+
 ---
 
 ### AWS Backup
@@ -982,6 +1171,185 @@
 **ขอบเขต:** Cross-service backup (EC2, EBS, RDS, Aurora, DynamoDB, EFS, FSx, Storage Gateway, etc.), Backup plans, Lifecycle policies, Vault lock (WORM), Cross-account backup
 
 **Use Cases:** Centralized backup management, compliance backup, cross-region backup, backup automation
+
+**ลิงค์อ้างอิง:** [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/aws-backup) | [Product Page](https://aws.amazon.com/backup/)
+
+---
+
+## 20. Quick Reference Links
+
+ตารางสรุปลิงค์ทั้งหมดสำหรับการเข้าดูราคาและเอกสารอย่างเป็นทางการของ AWS Services ที่อยู่ในขอบเขต Cloud Practitioner
+
+### Analytics
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon Athena | [ลิงค์](https://calculator.aws/#/createCalculator/athena) | [ลิงค์](https://aws.amazon.com/athena/) |
+| Amazon EMR | [ลิงค์](https://calculator.aws/#/createCalculator/elastic-map-reduce) | [ลิงค์](https://aws.amazon.com/emr/) |
+| AWS Glue | [ลิงค์](https://calculator.aws/#/createCalculator/glue) | [ลิงค์](https://aws.amazon.com/glue/) |
+| Amazon Kinesis | [ลิงค์](https://calculator.aws/#/createCalculator/kinesis-data-streams) | [ลิงค์](https://aws.amazon.com/kinesis/) |
+| Amazon OpenSearch | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-opensearch-service) | [ลิงค์](https://aws.amazon.com/opensearch-service/) |
+| Amazon QuickSight | [ลิงค์](https://calculator.aws/#/createCalculator/quicksight) | [ลิงค์](https://aws.amazon.com/quicksight/) |
+| Amazon Redshift | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-redshift) | [ลิงค์](https://aws.amazon.com/redshift/) |
+
+### Application Integration
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon EventBridge | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-eventbridge) | [ลิงค์](https://aws.amazon.com/eventbridge/) |
+| Amazon SNS | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-sns) | [ลิงค์](https://aws.amazon.com/sns/) |
+| Amazon SQS | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-sqs) | [ลิงค์](https://aws.amazon.com/sqs/) |
+| AWS Step Functions | [ลิงค์](https://calculator.aws/#/createCalculator/step-functions) | [ลิงค์](https://aws.amazon.com/step-functions/) |
+
+### Business Applications
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon Connect | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-connect) | [ลิงค์](https://aws.amazon.com/connect/) |
+| Amazon SES | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-ses) | [ลิงค์](https://aws.amazon.com/ses/) |
+
+### Cloud Financial Management
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS Budgets | [ลิงค์](https://calculator.aws/#/createCalculator/aws-budgets) | [ลิงค์](https://aws.amazon.com/aws-cost-management/aws-budgets/) |
+| AWS Cost Explorer | [ลิงค์](https://calculator.aws/#/createCalculator/aws-cost-explorer) | [ลิงค์](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) |
+| AWS Pricing Calculator | [ลิงค์](https://calculator.aws) | [ลิงค์](https://aws.amazon.com/pricing/calculator/) |
+
+### Compute
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS Auto Scaling | [ลิงค์](https://calculator.aws/#/createCalculator/auto-scaling) | [ลิงค์](https://aws.amazon.com/autoscaling/) |
+| Amazon EC2 | [ลิงค์](https://calculator.aws/#/createCalculator/ec2-enhancement) | [ลิงค์](https://aws.amazon.com/ec2/) |
+| Amazon ECS | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-ecs) | [ลิงค์](https://aws.amazon.com/ecs/) |
+| Amazon EKS | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-eks) | [ลิงค์](https://aws.amazon.com/eks/) |
+| AWS Elastic Beanstalk | [ลิงค์](https://calculator.aws/#/createCalculator/elastic-beanstalk) | [ลิงค์](https://aws.amazon.com/elasticbeanstalk/) |
+| AWS Fargate | [ลิงค์](https://calculator.aws/#/createCalculator/aws-fargate) | [ลิงค์](https://aws.amazon.com/fargate/) |
+| AWS Lambda | [ลิงค์](https://calculator.aws/#/createCalculator/lambda) | [ลิงค์](https://aws.amazon.com/lambda/) |
+
+### Containers
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon ECR | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-ecr) | [ลิงค์](https://aws.amazon.com/ecr/) |
+| Amazon ECS | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-ecs) | [ลิงค์](https://aws.amazon.com/ecs/) |
+| Amazon EKS | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-eks) | [ลิงค์](https://aws.amazon.com/eks/) |
+
+### Customer Enablement
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS Training | [ลิงค์](https://calculator.aws/#/createCalculator/aws-training) | [ลิงค์](https://aws.amazon.com/training/) |
+| AWS Skill Builder | — | [ลิงค์](https://aws.amazon.com/training/learn/) |
+
+### Database
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon Aurora | [ลิงค์](https://calculator.aws/#/createCalculator/aurora) | [ลิงค์](https://aws.amazon.com/rds/aurora/) |
+| Amazon DynamoDB | [ลิงค์](https://calculator.aws/#/createCalculator/dynamodb) | [ลิงค์](https://aws.amazon.com/dynamodb/) |
+| Amazon ElastiCache | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-elasticache) | [ลิงค์](https://aws.amazon.com/elasticache/) |
+| Amazon RDS | [ลิงค์](https://calculator.aws/#/createCalculator/rds) | [ลิงค์](https://aws.amazon.com/rds/) |
+| AWS DMS | [ลิงค์](https://calculator.aws/#/createCalculator/aws-dms) | [ลิงค์](https://aws.amazon.com/dms/) |
+| AWS SCT | — | [ลิงค์](https://aws.amazon.com/dms/schema-conversion-tool/) |
+
+### Developer Tools
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS CodeBuild | [ลิงค์](https://calculator.aws/#/createCalculator/codebuild) | [ลิงค์](https://aws.amazon.com/codebuild/) |
+| AWS CodePipeline | [ลิงค์](https://calculator.aws/#/createCalculator/codepipeline) | [ลิงค์](https://aws.amazon.com/codepipeline/) |
+| AWS X-Ray | [ลิงค์](https://calculator.aws/#/createCalculator/x-ray) | [ลิงค์](https://aws.amazon.com/xray/) |
+
+### End User Computing
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon AppStream 2.0 | [ลิงค์](https://calculator.aws/#/createCalculator/appstream2) | [ลิงค์](https://aws.amazon.com/appstream2/) |
+| Amazon WorkSpaces | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-workspaces) | [ลิงค์](https://aws.amazon.com/workspaces/) |
+| WorkSpaces Secure Browser | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-workspaces-web) | [ลิงค์](https://aws.amazon.com/workspaces/web/) |
+
+### Frontend Web and Mobile
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS Amplify | [ลิงค์](https://calculator.aws/#/createCalculator/aws-amplify) | [ลิงค์](https://aws.amazon.com/amplify/) |
+| AWS AppSync | [ลิงค์](https://calculator.aws/#/createCalculator/aws-appsync) | [ลิงค์](https://aws.amazon.com/appsync/) |
+
+### Internet of Things (IoT)
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS IoT Core | [ลิงค์](https://calculator.aws/#/createCalculator/aws-iot-core) | [ลิงค์](https://aws.amazon.com/iot-core/) |
+
+### Machine Learning
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon Lex | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-lex) | [ลิงค์](https://aws.amazon.com/lex/) |
+| Amazon Kendra | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-kendra) | [ลิงค์](https://aws.amazon.com/kendra/) |
+| Amazon SageMaker AI | [ลิงค์](https://calculator.aws/#/createCalculator/sagemaker) | [ลิงค์](https://aws.amazon.com/sagemaker/) |
+
+### Management and Governance
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS CloudFormation | [ลิงค์](https://calculator.aws/#/createCalculator/cloudformation) | [ลิงค์](https://aws.amazon.com/cloudformation/) |
+| AWS CloudTrail | [ลิงค์](https://calculator.aws/#/createCalculator/cloudtrail) | [ลิงค์](https://aws.amazon.com/cloudtrail/) |
+| Amazon CloudWatch | [ลิงค์](https://calculator.aws/#/createCalculator/cloudwatch) | [ลิงค์](https://aws.amazon.com/cloudwatch/) |
+| AWS Compute Optimizer | [ลิงค์](https://calculator.aws/#/createCalculator/compute-optimizer) | [ลิงค์](https://aws.amazon.com/compute-optimizer/) |
+| AWS Config | [ลิงค์](https://calculator.aws/#/createCalculator/config) | [ลิงค์](https://aws.amazon.com/config/) |
+| AWS Control Tower | [ลิงค์](https://calculator.aws/#/createCalculator/aws-control-tower) | [ลิงค์](https://aws.amazon.com/controltower/) |
+| AWS Health Dashboard | [ลิงค์](https://calculator.aws/#/createCalculator/aws-health) | [ลิงค์](https://aws.amazon.com/health/) |
+| AWS License Manager | [ลิงค์](https://calculator.aws/#/createCalculator/aws-license-manager) | [ลิงค์](https://aws.amazon.com/license-manager/) |
+| AWS Management Console | — | [ลิงค์](https://aws.amazon.com/console/) |
+| AWS Organizations | [ลิงค์](https://calculator.aws/#/createCalculator/aws-organizations) | [ลิงค์](https://aws.amazon.com/organizations/) |
+| AWS Service Catalog | [ลิงค์](https://calculator.aws/#/createCalculator/aws-service-catalog) | [ลิงค์](https://aws.amazon.com/servicecatalog/) |
+| Service Quotas | — | [ลิงค์](https://aws.amazon.com/servicequotas/) |
+| AWS Systems Manager | [ลิงค์](https://calculator.aws/#/createCalculator/systems-manager) | [ลิงค์](https://aws.amazon.com/systems-manager/) |
+| AWS Trusted Advisor | [ลิงค์](https://calculator.aws/#/createCalculator/trusted-advisor) | [ลิงค์](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/) |
+| AWS Well-Architected Tool | [ลิงค์](https://calculator.aws/#/createCalculator/wellarchitectedtool) | [ลิงค์](https://aws.amazon.com/wellarchitected-tool/) |
+
+### Migration and Transfer
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS Application Discovery Service | [ลิงค์](https://calculator.aws/#/createCalculator/application-discovery-service) | [ลิงค์](https://aws.amazon.com/application-discovery/) |
+| AWS MGN | [ลิงค์](https://calculator.aws/#/createCalculator/aws-application-migration-service) | [ลิงค์](https://aws.amazon.com/application-migration-service/) |
+| AWS DMS | [ลิงค์](https://calculator.aws/#/createCalculator/aws-dms) | [ลิงค์](https://aws.amazon.com/dms/) |
+| Migration Evaluator | — | [ลิงค์](https://aws.amazon.com/migration-evaluator/) |
+| AWS Migration Hub | [ลิงค์](https://calculator.aws/#/createCalculator/aws-migration-hub) | [ลิงค์](https://aws.amazon.com/migration-hub/) |
+| AWS SCT | — | [ลิงค์](https://aws.amazon.com/dms/schema-conversion-tool/) |
+| AWS Snow Family | [ลิงค์](https://calculator.aws/#/createCalculator/snowball) | [ลิงค์](https://aws.amazon.com/snow/) |
+
+### Networking and Content Delivery
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon API Gateway | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-api-gateway) | [ลิงค์](https://aws.amazon.com/api-gateway/) |
+| Amazon CloudFront | [ลิงค์](https://calculator.aws/#/createCalculator/cloudfront) | [ลิงค์](https://aws.amazon.com/cloudfront/) |
+| AWS Direct Connect | [ลิงค์](https://calculator.aws/#/createCalculator/directconnect) | [ลิงค์](https://aws.amazon.com/directconnect/) |
+| Amazon Route 53 | [ลิงค์](https://calculator.aws/#/createCalculator/route53) | [ลิงค์](https://aws.amazon.com/route53/) |
+| AWS VPN | [ลิงค์](https://calculator.aws/#/createCalculator/vpn) | [ลิงค์](https://aws.amazon.com/vpn/) |
+| Amazon VPC | [ลิงค์](https://calculator.aws/#/createCalculator/vpc) | [ลิงค์](https://aws.amazon.com/vpc/) |
+
+### Security, Identity, and Compliance
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| AWS Artifact | — | [ลิงค์](https://aws.amazon.com/artifact/) |
+| AWS Audit Manager | [ลิงค์](https://calculator.aws/#/createCalculator/audit-manager) | [ลิงค์](https://aws.amazon.com/audit-manager/) |
+| AWS ACM | [ลิงค์](https://calculator.aws/#/createCalculator/acm) | [ลิงค์](https://aws.amazon.com/certificate-manager/) |
+| AWS CloudHSM | [ลิงค์](https://calculator.aws/#/createCalculator/cloudhsm) | [ลิงค์](https://aws.amazon.com/cloudhsm/) |
+| Amazon Cognito | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-cognito) | [ลิงค์](https://aws.amazon.com/cognito/) |
+| Amazon Detective | [ลิงค์](https://calculator.aws/#/createCalculator/detective) | [ลิงค์](https://aws.amazon.com/detective/) |
+| AWS Directory Service | [ลิงค์](https://calculator.aws/#/createCalculator/aws-directory-service) | [ลิงค์](https://aws.amazon.com/directoryservice/) |
+| AWS Firewall Manager | [ลิงค์](https://calculator.aws/#/createCalculator/aws-firewall-manager) | [ลิงค์](https://aws.amazon.com/firewall-manager/) |
+| Amazon GuardDuty | [ลิงค์](https://calculator.aws/#/createCalculator/guardduty) | [ลิงค์](https://aws.amazon.com/guardduty/) |
+| AWS IAM | [ลิงค์](https://calculator.aws/#/createCalculator/iam) | [ลิงค์](https://aws.amazon.com/iam/) |
+| AWS IAM Identity Center | [ลิงค์](https://calculator.aws/#/createCalculator/sso) | [ลิงค์](https://aws.amazon.com/iam/identity-center/) |
+| Amazon Inspector | [ลิงค์](https://calculator.aws/#/createCalculator/inspector) | [ลิงค์](https://aws.amazon.com/inspector/) |
+| AWS KMS | [ลิงค์](https://calculator.aws/#/createCalculator/kms) | [ลิงค์](https://aws.amazon.com/kms/) |
+| Amazon Macie | [ลิงค์](https://calculator.aws/#/createCalculator/amazon-macie) | [ลิงค์](https://aws.amazon.com/macie/) |
+| AWS RAM | [ลิงค์](https://calculator.aws/#/createCalculator/ram) | [ลิงค์](https://aws.amazon.com/ram/) |
+| AWS Secrets Manager | [ลิงค์](https://calculator.aws/#/createCalculator/secrets-manager) | [ลิงค์](https://aws.amazon.com/secrets-manager/) |
+| AWS Security Hub | [ลิงค์](https://calculator.aws/#/createCalculator/security-hub) | [ลิงค์](https://aws.amazon.com/security-hub/) |
+| AWS Shield | [ลิงค์](https://calculator.aws/#/createCalculator/shield) | [ลิงค์](https://aws.amazon.com/shield/) |
+| AWS WAF | [ลิงค์](https://calculator.aws/#/createCalculator/waf) | [ลิงค์](https://aws.amazon.com/waf/) |
+
+### Storage
+| Service | AWS Pricing Calculator | Product Page |
+|---------|----------------------|--------------|
+| Amazon EBS | [ลิงค์](https://calculator.aws/#/createCalculator/ebs) | [ลิงค์](https://aws.amazon.com/ebs/) |
+| Amazon EFS | [ลิงค์](https://calculator.aws/#/createCalculator/efs) | [ลิงค์](https://aws.amazon.com/efs/) |
+| Amazon FSx | [ลิงค์](https://calculator.aws/#/createCalculator/fsx) | [ลิงค์](https://aws.amazon.com/fsx/) |
+| Amazon S3 | [ลิงค์](https://calculator.aws/#/createCalculator/s3) | [ลิงค์](https://aws.amazon.com/s3/) |
+| AWS Storage Gateway | [ลิงค์](https://calculator.aws/#/createCalculator/storage-gateway) | [ลิงค์](https://aws.amazon.com/storagegateway/) |
+| AWS Backup | [ลิงค์](https://calculator.aws/#/createCalculator/aws-backup) | [ลิงค์](https://aws.amazon.com/backup/) |
 
 ---
 
