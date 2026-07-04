@@ -1,0 +1,1015 @@
+# ความสามารถ ขอบเขต และการนำไปใช้งานของบริการ AWS ที่อยู่ในขอบเขต Cloud Practitioner
+
+> เอกสารนี้อ้างอิงตาม Exam Guide CLF-C02 จัดทำเพื่อเสริมความเข้าใจรายละเอียดของ AWS Services แต่ละรายการ ครอบคลุมความสามารถหลัก (Capabilities) ขอบเขตการใช้งาน (Scope) และตัวอย่างการนำไปใช้ (Use Cases)
+
+---
+
+## สารบัญ
+
+1. [Analytics](#1-analytics)
+2. [Application Integration](#2-application-integration)
+3. [Business Applications](#3-business-applications)
+4. [Cloud Financial Management](#4-cloud-financial-management)
+5. [Compute](#5-compute)
+6. [Containers](#6-containers)
+7. [Customer Enablement](#7-customer-enablement)
+8. [Database](#8-database)
+9. [Developer Tools](#9-developer-tools)
+10. [End User Computing](#10-end-user-computing)
+11. [Frontend Web and Mobile](#11-frontend-web-and-mobile)
+12. [Internet of Things (IoT)](#12-internet-of-things-iot)
+13. [Machine Learning](#13-machine-learning)
+14. [Management and Governance](#14-management-and-governance)
+15. [Migration and Transfer](#15-migration-and-transfer)
+16. [Networking and Content Delivery](#16-networking-and-content-delivery)
+17. [Security, Identity, and Compliance](#17-security-identity-and-compliance)
+18. [Serverless](#18-serverless)
+19. [Storage](#19-storage)
+
+---
+
+## 1. Analytics
+
+### Amazon Athena
+**ความสามารถ:** บริการ query แบบ serverless ที่ใช้ SQL วิเคราะห์ข้อมูลที่เก็บใน Amazon S3 โดยไม่ต้องตั้ง infrastructure ลูกค้าจ่ายตามการ query ที่ทำจริง
+
+**ขอบเขต:** รองรับการ query ไฟล์ในรูปแบบ CSV, JSON, ORC, Parquet, Avro ทำงานร่วมกับ AWS Glue Data Catalog
+
+**Use Cases:** วิเคราะห์ log จาก S3, BI reports, ad-hoc queries บน data lake
+
+---
+
+### Amazon EMR (Elastic MapReduce)
+**ความสามารถ:** จัดการ Big Data framework (Apache Spark, Hadoop, HBase, Presto) บนคลัสเตอร์ของ EC2 instances ที่สามารถ scale ได้ตาม workload
+
+**ขอบเขต:** รองรับหลาย framework, สามารถใช้ spot instances เพื่อลดต้นทุน, ทำงานร่วมกับ S3 เป็น data layer
+
+**Use Cases:** Data processing ขนาดใหญ่, machine learning, log analysis, real-time streaming
+
+---
+
+### AWS Glue
+**ความสามารถ:** ETL (Extract, Transform, Load) service แบบ serverless สำหรับเตรียมและ transform ข้อมูล มี Glue Data Catalog เป็น central metadata repository
+
+**ขอบเขต:** Serverless, ไม่ต้องจัดการ servers, รองรับ Python และ Scala, มี built-in transforms
+
+**Use Cases:** Data lake building, data migration, data preparation ก่อน analytics
+
+---
+
+### Amazon Kinesis
+**ความสามารถ:** รวบรวม ประมวลผล และวิเคราะห์ streaming data แบบ real-time มี 4 ผลิตภัณฑ์: Kinesis Data Streams, Data Firehose, Data Analytics, Video Streams
+
+**ขอบเขต:** Kinesis Data Firehose ส่งข้อมูลไป S3/Redshift/ES โดยอัตโนมัติ, Kinesis Data Analytics สำหรับ SQL queries บน streaming data
+
+**Use Cases:** IoT telemetry, log ingestion, real-time dashboards, fraud detection, live leaderboards
+
+---
+
+### Amazon OpenSearch Service
+**ความสามารถ:** Search engine แบบ open-source สำหรับ full-text search และ analytics รองรับ visualization ผ่าน OpenSearch Dashboards
+
+**ขอบเขต:** รองรับการ scale แนวนอน, ทำงานแบบ cluster, สามารถทำ near real-time search
+
+**Use Cases:** Application search, log analytics, security analytics, monitoring
+
+---
+
+### Amazon QuickSight
+**ความสามารถ:** Business Intelligence (BI) service แบบ cloud-native สร้าง visualizations และ dashboards สำหรับ business insights
+
+**ขอบเขต:** Serverless, ใช้ SPICE (in-memory engine) สำหรับ fast queries, รองรับ many data sources, mobile BI
+
+**Use Cases:** Executive dashboards, sales analytics, operational reporting, self-service BI
+
+---
+
+### Amazon Redshift
+**ความสามารถ:** Data warehouse enterprise-grade ที่ใช้ SQL วิเคราะห์ข้อมูลขนาดใหญ่ รองรับ petabyte-scale ใช้ columnar storage และ massively parallel processing (MPP)
+
+**ขอบเขต:** รองรับ complex queries, federated queries กับ S3 และ operational DBs, ML-based optimization
+
+**Use Cases:** Enterprise data warehousing, business intelligence, data analytics
+
+---
+
+## 2. Application Integration
+
+### Amazon EventBridge
+**ความสามารถ:** Serverless event bus ที่เชื่อมต่อ applications โดยใช้ events ช่วยให้ส่งข้อมูลระหว่าง SaaS apps, AWS services และ custom applications ได้ง่าย
+
+**ขอบเขต:** รองรับ SaaS integration (Salesforce, Zendesk, etc.), schema registry, event filtering, event replay
+
+**Use Cases:** Microservices communication, SaaS integration, audit logging, real-time notifications
+
+---
+
+### Amazon SNS (Simple Notification Service)
+**ความสามารถ:** Pub/sub messaging และ mobile notifications service ที่ส่ง messages จาก publisher ไปยัง subscribers (SQS, HTTP/S, Lambda, email, SMS, push notifications)
+
+**ขอบเขต:** Topics-based pub/sub, push-based delivery, รองรับ FIFO topics, รองรับ SMS และ email
+
+**Use Cases:** Application alerts, fanout messaging, mobile push notifications, event-driven workflows
+
+---
+
+### Amazon SQS (Simple Queue Service)
+**ความสามารถ:** Message queue service ที่แยก services ออกจากกัน มี Standard Queue (best-effort ordering, at-least-once delivery) และ FIFO Queue (exact ordering, exactly-once processing)
+
+**ขอบเขต:** Serverless, fully managed, ไม่มี limit ของ message throughput, messages ถูกเก็บ 1-14 วัน
+
+**Use Cases:** Decoupling microservices, batch processing, task queues, request buffering
+
+---
+
+### AWS Step Functions
+**ความสามารถ:** Orchestration service สำหรับจัดลำดับ AWS Lambda functions และกิจกรรมอื่นๆ เป็น workflow ที่ visualize ได้
+
+**ขอบเขต:** รองรับ 200+ AWS service integrations, error handling, retry logic, branching, parallel execution
+
+**Use Cases:** Workflow automation, order processing, data processing pipelines, ETL orchestration
+
+---
+
+## 3. Business Applications
+
+### Amazon Connect
+**ความสามารถ:** Cloud contact center service ที่สร้าง customer service center ได้ภายในไม่กี่ชั่วโมง รองรับ omnichannel (voice, chat, tasks)
+
+**ขอบเขต:** CTI integration, IVR builder, real-time and historical analytics, AI-powered agents (Amazon Lex)
+
+**Use Cases:** Customer support centers, sales hotlines, help desks, outbound campaigns
+
+---
+
+### Amazon SES (Simple Email Service)
+**ความสามารถ:** Email service แบบ cloud-native สำหรับส่งและรับ email รองรับ transactional emails, marketing emails, mass emails
+
+**ขอบเขต:** ใช้ SMTP หรือ AWS SDK, DKIM/SPF verification, sandbox mode สำหรับทดสอบ, dedicated IPs สำหรับ reputation
+
+**Use Cases:** Transactional emails, marketing campaigns, system notifications, bounce/complaint handling
+
+---
+
+## 4. Cloud Financial Management
+
+### AWS Budgets
+**ความสามารถ:** ติดตามและจัดการค่าใช้จ่าย AWS สร้าง budget กำหนด threshold และ alert เมื่อใช้เกินที่ตั้งไว้ รองรับ Reserved Instance/Savings Plans coverage และ utilization tracking
+
+**ขอบเขต:** สร้างได้ 2 budgets ฟรี (เพิ่มได้), รองรับ custom filters, ส่ง alert ได้หลายช่องทาง
+
+**Use Cases:** Cost monitoring, spend alerts, RI utilization tracking, anomaly detection
+
+---
+
+### AWS Cost Explorer
+**ความสามารถ:** วิเคราะห์ค่าใช้จ่าย AWS ด้วย visualize charts และ filters มี RI recommendations สำหรับ cost optimization
+
+**ขอบเขต:** ดู cost ย้อนหลัง 12 เดือน, forecast ค่าใช้จ่าย, รองรับ tag-based filtering, built-in recommendations
+
+**Use Cases:** Cost trend analysis, cost attribution by team/project, cost optimization planning
+
+---
+
+### AWS Pricing Calculator
+**ความสามารถ:** ประมาณการค่าใช้จ่าย AWS ก่อนสร้าง resources ใช้วางแผน budget สำหรับโปรเจกต์ใหม่
+
+**ขอบเขต:** รองรับ almost all AWS services, ปรับ usage parameters ได้, export เป็น CSV
+
+**Use Cases:** Budget planning, project cost estimation, architecture cost comparison
+
+---
+
+## 5. Compute
+
+### AWS Auto Scaling
+**ความสามารถ:** ปรับ capacity อัตโนมัติสำหรับหลาย AWS resources (EC2, ECS, DynamoDB, Aurora) ตั้งค่า scale-out/in ตาม metrics ที่กำหนด
+
+**ขอบเขต:** รองรับ EC2 Auto Scaling Groups, ECS tasks, DynamoDB tables/indexes, Aurora replicas
+
+**Use Cases:** Variable workloads, batch processing, web applications with traffic spikes
+
+---
+
+### Amazon EC2 (Elastic Compute Cloud)
+**ความสามารถ:** Virtual servers ใน AWS Cloud มีหลาย instance types สำหรับ workloads ต่างๆ รองรับหลาย purchasing options
+
+**ขอบเขต:**
+- **Instance Types:** General Purpose (t3, m5), Compute Optimized (c5, c6i), Memory Optimized (r5, r6i), Storage Optimized (d3, i3)
+- **Purchasing:** On-Demand, Reserved, Spot, Savings Plans, Dedicated Hosts, Dedicated Instances, Capacity Reservations
+- **Features:** AMI, Key Pairs, Security Groups, Placement Groups
+
+**Use Cases:** Web servers, databases, ML inference, batch processing, enterprise applications
+
+---
+
+### Amazon ECS (Elastic Container Service)
+**ความสามารถ:** Container orchestration service สำหรับ run Docker containers บน EC2 instances หรือ Fargate
+
+**ขอบเขต:** รองรับ Docker Compose, service discovery, load balancing, auto scaling, IAM roles per task
+
+**Use Cases:** Microservices deployment, batch jobs, long-running applications, containerized web apps
+
+---
+
+### Amazon EKS (Elastic Kubernetes Service)
+**ความสามารถ:** Managed Kubernetes service ที่ run Kubernetes บน AWS โดยไม่ต้องจัดการ control plane
+
+**ขอบเขต:** รองรับ standard Kubernetes, AWS Fargate integration, EKS Add-ons (CNI, CoreDNS, kube-proxy), AWS Outposts support
+
+**Use Cases:** Enterprise Kubernetes workloads, hybrid cloud, cloud-native applications requiring Kubernetes
+
+---
+
+### AWS Elastic Beanstalk
+**ความสามารถ:** PaaS-like service ที่ deploy และ scale web applications (Node.js, Python, Java, .NET, Go, PHP) โดยจัดการ infrastructure ให้อัตโนมัติ
+
+**ขอบเขต:** รองรับ many platforms, environment management, rolling updates, monitoring
+
+**Use Cases:** Quick application deployment, developers who want less ops overhead, prototypes
+
+---
+
+### AWS Fargate
+**ความสามารถ:** Serverless compute engine สำหรับ containers ที่ run บน ECS หรือ EKS โดยไม่ต้องจัดการ EC2 instances
+
+**ขอบเขต:** Pay per task/pod runtime, ไม่ต้อง provision servers, รองรับ ARM and x86 architectures
+
+**Use Cases:** Serverless containers, microservices, periodic batch jobs, cost-sensitive workloads
+
+---
+
+### AWS Lambda
+**ความสามารถ:** Serverless compute service ที่ run code ตอบสนอง events โดยไม่ต้อง provision servers
+
+**ขอบเขต:** รองรับ many languages (Node.js, Python, Java, Go, Ruby, .NET, custom runtimes), 15-min max execution time, 10GB max memory per function, ephemeral storage 512MB-10GB
+
+**Use Cases:** Event-driven processing, API backends, data processing, automation, real-time file processing
+
+---
+
+## 6. Containers
+
+### Amazon ECR (Elastic Container Registry)
+**ความสามารถ:** Managed container registry สำหรับเก็บ Docker และ OCI images ทำงานร่วมกับ ECS, EKS, Lambda
+
+**ขอบเขต:** Highly available, encryption at rest, image scanning, lifecycle policies, pull-through cache
+
+**Use Cases:** Container image storage, CI/CD pipelines, private image registries
+
+---
+
+### Amazon ECS (ดู Compute)
+
+### Amazon EKS (ดู Compute)
+
+---
+
+## 7. Customer Enablement
+
+### AWS Training
+**ความสามารถ:** บริการเรียนรู้อย่างเป็นทางการจาก AWS มีหลายรูปแบบ digital training และ in-person training ผ่าน AWS Training Partners
+
+**ขอบเขต:** ครอบคลุมทุก certifications และ skill levels, มีเฉพาะบาง courses ฟรี
+
+**Use Cases:** AWS skill development, certification preparation, team training
+
+---
+
+### AWS Skill Builder
+**ความสามารถ:** แพลตฟอร์มเรียนรู้ digital ของ AWS มี courses, labs, AWS Cloud Quest (game-based learning)
+
+**ขอบเขต:** Individual learning plans, role-based learning paths, hands-on labs, exam prep
+
+**Use Cases:** Self-paced learning, certification prep, hands-on practice
+
+---
+
+## 8. Database
+
+### Amazon Aurora
+**ความสามารถ:** MySQL- และ PostgreSQL-compatible relational database ที่มี enterprise features (global database, backtrack, serverless) เร็วกว่า standard MySQL 5x, PostgreSQL 3x
+
+**ขอบเขต:** Automatic storage scaling, multi-AZ deployments, read replicas up to 15, global database (cross-region replication), Aurora Serverless v2
+
+**Use Cases:** Enterprise applications, SaaS applications, e-commerce, gaming
+
+---
+
+### Amazon DynamoDB
+**ความสามารถ:** Fully managed NoSQL database แบบ key-value และ document ที่มี single-digit millisecond latency ทุก scale
+
+**ขอบเขต:** On-demand หรือ provisioned capacity modes, Global Tables (multi-region), DAX (in-memory cache), DynamoDB Streams, encryption at rest
+
+**Use Cases:** Web and mobile backends, gaming, IoT, real-time bidding, microservices
+
+---
+
+### Amazon ElastiCache
+**ความสามารถ:** Managed in-memory caching service รองรับ Redis และ Memcached ช่วยลด latency และ offload databases
+
+**ขอบเขต:** Redis (cluster mode, pub/sub, sorted sets, persistence), Memcached (multi-threaded, SASL auth), automatic failover, backup/restore
+
+**Use Cases:** Session stores, caching, leaderboards, real-time analytics, message queues
+
+---
+
+### Amazon RDS (Relational Database Service)
+**ความสามารถ:** Managed relational database service รองรับ 6 engines: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, Amazon Aurora
+
+**ขอบเขต:** Multi-AZ deployments, Read Replicas, automated backups, automated software patching, DB Subnet Groups
+
+**Use Cases:** Traditional web applications, e-commerce, CMS, business applications
+
+---
+
+### AWS DMS (Database Migration Service)
+**ความสามารถ:** Migration service สำหรับย้าย databases ไป AWS อย่างปลอดภัย รองรับ homogeneous และ heterogeneous migrations
+
+**ขอบเขต:** Continuous data replication (CDC), SCT สำหรับ schema conversion, รองรับ 20+ data sources
+
+**Use Cases:** Cloud migration, database modernization, development environment creation
+
+---
+
+### AWS SCT (Schema Conversion Tool)
+**ความสามารถ:** แปลง database schemas และ code objects จาก Oracle, SQL Server, SAP ASE ไปเป็น formats ที่ RDS/Aurora/DynamoDB รองรับ
+
+**ขอบเขต:** รองรับ heterogeneous conversions, วิเคราะห์ complexity ของ conversion, สร้าง assessment report
+
+**Use Cases:** Database schema migration, heterogeneous to homogeneous migration
+
+---
+
+## 9. Developer Tools
+
+### AWS CodeBuild
+**ความสามารถ:** Managed build service ที่ compile code, run tests, และ produce software packages
+
+**ขอบเขต:** Serverless, pay per minute, รองรับ many programming languages, Docker integration, รองรับ BYO build environments
+
+**Use Cases:** CI/CD pipelines, automated builds, container builds, batch compilation
+
+---
+
+### AWS CodePipeline
+**ความสามารถ:** Continuous delivery service ที่ automate release pipelines สำหรับ fast and reliable application updates
+
+**ขอบเขต:** รองรับ custom workflows, 200+ integrations (GitHub, Jenkins, etc.), parallel execution, approval gates
+
+**Use Cases:** CI/CD pipelines, release automation, multi-stage deployments
+
+---
+
+### AWS X-Ray
+**ความสามารถ:** Tracing service ที่ช่วยวิเคราะห์และ debug distributed applications เช่น microservices
+
+**ขอบเขต:** Request tracing, service maps, latency analysis, annotations, sampling controls
+
+**Use Cases:** Distributed system debugging, performance optimization, production issue investigation
+
+---
+
+## 10. End User Computing
+
+### Amazon AppStream 2.0
+**ความสามารถ:** Managed desktop application streaming service ที่ stream แอปพลิเคชันไปยัง devices ไม่ต้อง install บนเครื่องผู้ใช้
+
+**ขอบเขต:** Windows and Linux applications, persistent or pooled fleets, user profile management, SSO integration
+
+**Use Cases:** Remote work, legacy application access, software training, contract workers
+
+---
+
+### Amazon WorkSpaces
+**ความสามารถ:** Managed desktop-as-a-service (DaaS) ที่ provide virtual desktops ใน AWS สำหรับ end users
+
+**ขอบเขต:** Windows and Linux desktops, AlwaysOn และ AutoStop bundles, BYOD (WorkSpaces Web), directory integration
+
+**Use Cases:** Remote employees, contractors, temporary workers, secure desktop environments
+
+---
+
+### Amazon WorkSpaces Secure Browser
+**ความสามารถ:** Browser-based access ไป SaaS และ internal applications โดยไม่ต้อง install อะไรบน device
+
+**ขอบเขต:** Zero trust architecture, no data stored on endpoints, integrated with IAM, cloud-hosted browsers
+
+**Use Cases:** Secure browsing, contractor access, BYOD environments, regulated industries
+
+---
+
+## 11. Frontend Web and Mobile
+
+### AWS Amplify
+**ความสามารถ:** Full-stack platform สำหรับสร้าง พัฒนา และ deploy scalable web และ mobile applications
+
+**ขอบเขต:** Amplify CLI, Amplify Hosting (CI/CD, preview), Amplify DataStore (offline-first), Amplify Auth, Amplify API (GraphQL/REST)
+
+**Use Cases:** Web apps, React/Vue/Angular apps, mobile apps (iOS/Android), JAMstack
+
+---
+
+### AWS AppSync
+**ความสามารถ:** Managed GraphQL service ที่ simplify application development โดยการเชื่อมต่อ frontend กับ multiple data sources
+
+**ขอบเขต:** Real-time subscriptions, offline sync (Amplify DataStore), fine-grained access control, Lambda resolvers
+
+**Use Cases:** Mobile backends, real-time collaboration apps, IoT dashboards, microservices integration
+
+---
+
+## 12. Internet of Things (IoT)
+
+### AWS IoT Core
+**ความสามารถ:** Managed cloud platform สำหรับเชื่อมต่อ IoT devices กับ cloud applications รองรับ billions of devices, trillions of messages
+
+**ขอบเขต:** MQTT, HTTP, WebSocket protocols, device shadow, rules engine, secure authentication (X.509 certificates, IAM)
+
+**Use Cases:** Smart home, industrial IoT, connected vehicles, asset tracking
+
+---
+
+## 13. Machine Learning
+
+### Amazon Lex
+**ความสามารถ:** AI service สำหรับสร้าง conversational interfaces (chatbots, voice bots) ใช้เทคโนโลยีเดียวกับ Alexa
+
+**ขอบเขต:** Automatic Speech Recognition (ASR), Natural Language Understanding (NLU), slot filling, multi-turn conversations
+
+**Use Cases:** Customer service chatbots, IVR replacement, enterprise assistants, mobile apps
+
+---
+
+### Amazon Kendra
+**ความสามารถ:** ML-powered enterprise search service ที่ search across multiple data sources ให้ผลลัพธ์ที่ relevant
+
+**ขอบเขต:** Document connectors (S3, SharePoint, Salesforce, etc.), semantic search, natural language queries, metadata search
+
+**Use Cases:** Enterprise knowledge management, document search, customer support search, research portals
+
+---
+
+### Amazon SageMaker AI
+**ความสามารถ:** End-to-end ML platform ที่ prepare data, train models, และ deploy สำหรับ predictions
+
+**ขอบเขต:** SageMaker Studio (IDE), Ground Truth (data labeling), Autopilot (auto-ML), Neo (model optimization), JumpStart (pre-built models)
+
+**Use Cases:** Custom model training, pre-built AI applications, MLOps, real-time and batch inference
+
+---
+
+## 14. Management and Governance
+
+### AWS Auto Scaling (ดู Compute)
+
+### AWS CloudFormation
+**ความสามารถ:** Infrastructure as Code (IaC) service ที่ model และ provision AWS resources ใช้ templates (YAML/JSON)
+
+**ขอบเขต:** Drift detection, Change Sets, StackSets (cross-account/region), Nested Stacks, Registry (third-party resources)
+
+**Use Cases:** Infrastructure provisioning, environment recreation, disaster recovery
+
+---
+
+### AWS CloudTrail
+**ความสามารถ:** Governance, compliance, risk audit service ที่ log API calls ทั้งหมดใน AWS account
+
+**ขอบเขต:** Management events, data events, insights events, CloudTrail Lake (queryable log storage), multi-region trails
+
+**Use Cases:** Security analysis, incident investigation, compliance audit, operational troubleshooting
+
+---
+
+### Amazon CloudWatch
+**ความสามารถ:** Monitoring และ observability service ที่ collect metrics, logs, events จาก AWS และ on-premises
+
+**ขอบเขต:**
+- **Metrics:** Custom metrics, detailed monitoring, math expressions, alarms
+- **Logs:** Log groups, insights queries, Subscription filters, Live Tail
+- **Dashboards:** Customizable dashboards, widget-based
+- **Synthetics:** Canary monitoring
+- **Application Insights:** Auto-instrument for Java, .NET, etc.
+
+**Use Cases:** Infrastructure monitoring, application performance monitoring, log analysis, alerting
+
+---
+
+### AWS Compute Optimizer
+**ความสามารถ:** ML service ที่วิเคราะห์ usage patterns และแนะนำ optimal resource configurations (EC2, EBS, Lambda)
+
+**ขอบเขต:** Rightsizing recommendations, utilization data analysis, refresh recommendations, Savings Plans recommendations
+
+**Use Cases:** Cost optimization, performance improvement, resource rightsizing
+
+---
+
+### AWS Config
+**ความสามารถ:** Resource inventory และ change tracking service ที่บันทึก configuration history และ compliance ของ AWS resources
+
+**ขอบเขต:** Configuration history, conformance packs, rules (managed/custom), remediation, aggregator for multi-account
+
+**Use Cases:** Compliance auditing, security analysis, change management, inventory management
+
+---
+
+### AWS Control Tower
+**ความสามารถ:** 設置 landing zone อย่างปลอดภัยและปฏิบัติตาม best practices สำหรับ multi-account AWS environments
+
+**ขอบเขต:** Account Factory, Guardrails (preventive/detective), Dashboard, Enrollment, Service Catalog portfolios
+
+**Use Cases:** Enterprise multi-account governance, regulated environments, new AWS onboarding
+
+---
+
+### AWS Health Dashboard
+**ความสามารถ:** แสดงสถานะของ AWS resources และข้อมูล personalized alerts เมื่อเกิด events ที่กระทบ workloads
+
+**ขอบเขต:** Service Health Dashboard (public), Your Account Health Dashboard (personalized), AWS Health API
+
+**Use Cases:** Proactive issue awareness, incident response, SLA monitoring
+
+---
+
+### AWS License Manager
+**ความสามารถ:** Managed license service ที่ track, manage, และ control software licenses จาก vendors ต่างๆ
+
+**ขอบเขต:** License tracking, vendor-specific rules (Oracle, SQL Server, SAP), BYOL support, shared enforcement
+
+**Use Cases:** License compliance, vendor audits, license optimization
+
+---
+
+### AWS Management Console
+**ความสามารถ:** Web-based interface สำหรับจัดการ AWS resources ทั้งหมด
+
+**ขอบเขต:** Resource browsing, actions, settings, mobile app (AWS Console Mobile)
+
+**Use Cases:** Daily AWS management, resource exploration, basic operations
+
+---
+
+### AWS Organizations
+**ความสามารถ:** Account management service สำหรับ central governance และ management ของ multiple AWS accounts
+
+**ขอบเขต:** Organizational Units (OUs), Service Control Policies (SCPs), SCPs, Consolidated Billing, AI Services Opt-Out Policies, Tag policies
+
+**Use Cases:** Multi-account strategy, centralized billing, security baselines, departmental cost tracking
+
+---
+
+### AWS Service Catalog
+**ความสามารถ:** Managed catalog ของ IT services (templates, products) ที่ end users สามารถ launch ได้อย่าง governed
+
+**ขอบเขต:** Portfolios, Products, Constraints (launch/template/notification), IAM permissions, Versioning
+
+**Use Cases:** Self-service provisioning, standard environment deployment, compliance enforcement
+
+---
+
+### Service Quotas
+**ความสามารถ:** แสดง AWS service quotas และ request quota increases สำหรับ account
+
+**ขอบเขต:** AWS Console และ API, template-based requests, Trusted Advisor integration for quotas
+
+**Use Cases:** Capacity planning, quota monitoring, resource limit management
+
+---
+
+### AWS Systems Manager
+**ความสามารถ:** Central hub สำหรับ operational data และ automation ของ AWS resources มีหลาย capabilities
+
+**ขอบเขต:**
+- **Inventory:** เก็บ configuration data
+- **Session Manager:** เข้าถึง EC2 โดยไม่ต้อง SSH/RDP
+- **Run Command:** Execute commands/automation
+- **Patch Manager:** Automated patching
+- **State Manager:** Maintain consistent configurations
+- **Parameter Store:** Secure storage (configuration/secrets)
+- **OpsCenter:** Aggregate operational tasks
+
+**Use Cases:** Fleet management, patch management, secrets management, operational automation
+
+---
+
+### AWS Trusted Advisor
+**ความสามารถ:** Advisor ที่ให้ real-time guidance ตาม AWS best practices ใน 5 categories: Cost Optimization, Performance, Security, Fault Tolerance, Service Limits
+
+**ขอบเขต:** Basic support: 6 checks (ฟรี), Business/Enterprise: all checks, automated actions for some checks
+
+**Use Cases:** Cost optimization, security hardening, performance tuning, limit monitoring
+
+---
+
+### AWS Well-Architected Tool
+**ความสามารถ:** Review และ improve workloads ตาม AWS Well-Architected Framework 6 pillars
+
+**ขอบเขต:** Workload reviews, lens extensions, improvement plans, milestone tracking
+
+**Use Cases:** Architecture review, risk assessment, continuous improvement
+
+---
+
+## 15. Migration and Transfer
+
+### AWS Application Discovery Service
+**ความสามารถ:** รวบรวมข้อมูล about on-premises servers เพื่อวางแผน migration ไป AWS
+
+**ขอบเขต:** Agent-based และ agentless collection, dependency mapping, usage and configuration data
+
+**Use Cases:** Migration planning, data center assessment, dependency analysis
+
+---
+
+### AWS Application Migration Service (MGN)
+**ความสามารถ:** Lift-and-shift migration service ที่ migrate physical, virtual, และ cloud servers ไป AWS อย่าง automated
+
+**ขอบเขต:** Continuous replication, cutover planning, validation, ใช้ Agent MGN Client
+
+**Use Cases:** Large-scale migrations, data center exit, cloud migration projects
+
+---
+
+### AWS Database Migration Service (DMS) (ดู Database)
+
+### Migration Evaluator
+**ความสามารถ:** วิเคราะห์ on-premises infrastructure และสร้าง data-driven business case สำหรับ AWS migration
+
+**ขอบเขต:** TCO analysis, migration assessment, business case generation
+
+**Use Cases:** Migration business case, cost comparison, strategic planning
+
+---
+
+### AWS Migration Hub
+**ความสามารถ:** Central hub สำหรับ track และ manage migrations ข้าม multiple AWS tools
+
+**ขอบเขต:** Migration tracking, unified view, tool integrations (MGN, DMS, etc.)
+
+**Use Cases:** Large migration program management, progress tracking, tool consolidation
+
+---
+
+### AWS Schema Conversion Tool (SCT) (ดู Database)
+
+### AWS Snow Family
+**ความสามารถ:** Physical devices สำหรับย้ายข้อมูลขนาดใหญ่ offline ไป AWS เมื่อ network ไม่เพียงพอ
+
+**ขอบเขต:**
+- **Snowball Edge Storage Optimized:** 80TB, for large data transfers
+- **Snowball Edge Compute Optimized:** 42TB + compute (Lambda, EC2)
+- **Snowcone:** 8TB (smallest), สำหรับ space-constrained environments
+- **Snowmobile:** 100PB container, สำหรับ exabyte-scale transfers
+
+**Use Cases:** Data center migration, disaster recovery, remote site data transfer, edge computing
+
+---
+
+## 16. Networking and Content Delivery
+
+### Amazon API Gateway
+**ความสามารถ:** Managed service สำหรับสร้าง, deploy, และ manage APIs (REST, HTTP, WebSocket) ที่เชื่อมต่อ backend services
+
+**ขอบเขต:** REST, HTTP, WebSocket APIs, Lambda integrations, AWS X-Ray tracing, throttling, caching, JWT/OAuth, API keys
+
+**Use Cases:** Serverless APIs, microservices backends, mobile backends, real-time applications
+
+---
+
+### Amazon CloudFront
+**ความสามารถ:** Content Delivery Network (CDN) ที่ distribute content ไป users ทั่วโลกด้วย low latency
+
+**ขอบเขต:** Global network of 600+ PoPs, SNI-based TLS, Lambda@Edge, Origin Access Control (OAC), RTMP distribution (legacy), Functions
+
+**Use Cases:** Static content delivery, video streaming, dynamic content, API acceleration, malware protection
+
+---
+
+### AWS Direct Connect
+**ความสามารถ:** Dedicated network connection จาก on-premises ไป AWS ที่ bypasses internet
+
+**ขอบเขต:** 1Gbps, 10Gbps, 100Gbps links, AWS Direct Connect SiteLink, VIFs (Public/Private/VLAN), LAG, redundant connections
+
+**Use Cases:** Hybrid cloud, large data transfers, consistent network performance, compliance requirements
+
+---
+
+### Amazon Route 53
+**ความสามารถ:** Highly available DNS และ domain registration service ที่ routing ด้วย latency, geolocation, health checks
+
+**ขอบเขต:** DNS records (A, AAAA, CNAME, MX, TXT, etc.), health checks, routing policies (Simple, Weighted, Latency, Geolocation, Failover, IP-based), domain registration, Route 53 Resolver
+
+**Use Cases:** DNS management, domain registration, health check-based routing, disaster recovery
+
+---
+
+### AWS VPN
+**ความสามารถ:** Secure connectivity ระหว่าง on-premises และ AWS ผ่าน encrypted tunnel
+
+**ขอบเขต:**
+- **Site-to-Site VPN:** IPsec VPN ระหว่าง VPC และ on-premises, supports BGP
+- **Client VPN:** Managed client-based VPN (OpenVPN-based), SSL-VPN
+
+**Use Cases:** Hybrid cloud connectivity, remote access, site-to-site connections
+
+---
+
+### Amazon VPC (Virtual Private Cloud)
+**ความสามารถ:** Isolated cloud network ที่ launch AWS resources ใน virtual network ที่กำหนดเอง
+
+**ขอบเขต:**
+- **Components:** Subnets (Public/Private), Route Tables, Internet Gateway, NAT Gateway, VPC Endpoints (Interface/Gateway), Peering, Security Groups, NACLs, VPN
+- **Features:** VPC CIDR blocks, DHCP options, DNS settings, IP addressing (IPv4/IPv6), VPC Flow Logs, Traffic Mirroring
+
+**Use Cases:** Isolated workloads, multi-tier applications, hybrid cloud, compliance isolation
+
+---
+
+## 17. Security, Identity, and Compliance
+
+### AWS Artifact
+**ความสามารถ:** Self-service portal สำหรับ access AWS compliance reports และ agreements (SAE, BAA, NDA)
+
+**ขอบเขต:** Artifact Agreements (customer agreements), Artifact Reports (SOC, PCI, ISO, etc.), Audit Manager reports integration
+
+**Use Cases:** Compliance evidence gathering, security reviews, regulatory audits
+
+---
+
+### AWS Audit Manager
+**ความสามารถ:** Automated evidence collection service สำหรับ continuous compliance auditing
+
+**ขอบเขต:** Pre-built frameworks (SOC, PCI, GDPR, etc.), custom frameworks, automated evidence collection, assessment reports
+
+**Use Cases:** Continuous compliance, audit preparation, control testing automation
+
+---
+
+### AWS Certificate Manager (ACM)
+**ความสามารถ:** Provision, manage, และ deploy SSL/TLS certificates สำหรับ AWS services และ internal use
+
+**ขอบเขต:** Free public certificates, import third-party CAs, ACM Private CA, auto-renewal, integration with ALB, CloudFront, API Gateway
+
+**Use Cases:** HTTPS for websites, API security, encrypted communications
+
+---
+
+### AWS CloudHSM
+**ความสามารถ:** Hardware Security Module (HSM) managed by AWS ที่ generate และ use encryption keys ใน single-tenant hardware
+
+**ขอบเขต:** FIPS 140-2 Level 3, PKCS#11, JCE, CNSA compliant, dedicated hardware, no AWS access to keys
+
+**Use Cases:** Cryptographic operations, key storage for compliance, DNSSEC, code signing
+
+---
+
+### Amazon Cognito
+**ความสามารถ:** User authentication, authorization, และ user management สำหรับ web และ mobile apps
+
+**ขอบเขต:** User Pools (sign-up/sign-in), Identity Pools (AWS credentials), Social IdPs (Google, Facebook, Apple), SAML/OIDC, MFA
+
+**Use Cases:** Web/mobile app auth, microservice auth, B2C apps, access to AWS resources
+
+---
+
+### Amazon Detective
+**ความสามารถ:** Analyze, investigate, และ identify root cause ของ security issues โดย aggregate logs และ apply ML
+
+**ขอบเขต:** Integrates with CloudTrail, VPC Flow Logs, GuardDuty findings, visual graphs, timeline analysis
+
+**Use Cases:** Security investigations, root cause analysis, behavioral analysis
+
+---
+
+### AWS Directory Service
+**ความสามารถ:** Managed directories ใน AWS รองรับ Microsoft AD, Simple AD, AD Connector
+
+**ขอบเขต:**
+- **AWS Managed Microsoft AD:** Full Microsoft AD in AWS
+- **Simple AD:** Samba-based, small workloads
+- **AD Connector:** Proxy to on-premises AD
+
+**Use Cases:** Windows workloads, SSO, user management, application authentication
+
+---
+
+### AWS Firewall Manager
+**ความสามารถ:** Central management ของ AWS WAF rules ข้าม accounts และ resources
+
+**ขอบเขต:** WAF rules management, Shield Advanced protection, Security Groups policies, Centralized policy management
+
+**Use Cases:** Multi-account security management, organization-wide firewall policies
+
+---
+
+### Amazon GuardDuty
+**ความสามารถ:** Threat detection service ที่ continuously monitor สำหรับ malicious activity โดยใช้ ML
+
+**ขอบเขต:** CloudTrail event logs, VPC Flow Logs, DNS logs, EKS audit logs, S3 data events, malware protection (S3)
+
+**Use Cases:** Continuous threat detection, compromised credentials, cryptocurrency mining, data exfiltration
+
+---
+
+### AWS Identity and Access Management (IAM)
+**ความสามารถ:** 核心 security service สำหรับ manage identities และ access ของ AWS resources
+
+**ขอบเขต:**
+- **Identities:** Users, Groups, Roles, Managed Policies, Inline Policies
+- **Access Methods:** Access Keys, Passwords, MFA, Service Control Policies (SCPs)
+- **Features:** Role-based access, federation, temporary credentials, policy conditions
+
+**Use Cases:** Permission management, least privilege enforcement, cross-account access, federation
+
+---
+
+### AWS IAM Identity Center
+**ความสามารถ:** Single Sign-On (SSO) service สำหรับ connect AWS accounts และ business applications
+
+**ขอบเขต:** SSO to AWS accounts, SAML 2.0 applications, IAM Identity Center directory, Permission Sets, MFA
+
+**Use Cases:** Enterprise SSO, multi-account management, SaaS application access
+
+---
+
+### Amazon Inspector
+**ความสามารถ:** Automated vulnerability management service ที่ scan EC2 instances และ container images
+
+**ขอบเขต:** Network reachability analysis, package vulnerabilities (EC2), Lambda function scanning, container image scanning (ECR), CVE database
+
+**Use Cases:** Vulnerability scanning, security posture, compliance checking
+
+---
+
+### AWS Key Management Service (KMS)
+**ความสามารถ:** Managed encryption key service สำหรับ create และ control encryption keys
+
+**ขอบเขต:** Symmetric keys (AES-256), Asymmetric keys (RSA, ECC), AWS managed keys, Customer managed keys, Custom key stores (CloudHSM), Key rotation, FIPS 140-2 Level 2/3
+
+**Use Cases:** Data encryption, compliance, key rotation, envelope encryption
+
+---
+
+### Amazon Macie
+**ความสามารถ:** Data security service ที่ discover และ protect sensitive data ใน S3 โดยใช้ ML
+
+**ขอบเขต:** Sensitive data discovery, S3 inventory, automated findings, PII detection, policy findings
+
+**Use Cases:** Data loss prevention, compliance, sensitive data discovery, privacy protection
+
+---
+
+### AWS Resource Access Manager (RAM)
+**ความสามารถ:** Share AWS resources ข้าม AWS accounts โดยไม่ต้อง duplicate
+
+**ขอบเขต:** Resource sharing (VPC subnets, Transit Gateways, License configs, etc.), Organizational units sharing
+
+**Use Cases:** Multi-account resource sharing, VPC sharing, shared services
+
+---
+
+### AWS Secrets Manager
+**ความสามารถ:** เก็บ, retrieve, และ rotate secrets (database credentials, API keys) อย่างปลอดภัย
+
+**ขอบเขต:** Secret rotation (RDS, Redshift, etc.), Automatic rotation, Cross-account access, Fine-grained IAM policies, Secret versioning
+
+**Use Cases:** Application credentials, database passwords, API keys, certificates
+
+---
+
+### AWS Security Hub
+**ความสามารถ:** Central security dashboard ที่ aggregate และ prioritize security findings จาก multiple AWS และ third-party services
+
+**ขอบเขต:** Security standards (CIS, PCI DSS, AWS FSBP), Integrations (GuardDuty, Inspector, Macie, partner products), Automated remediation, Findings aggregation
+
+**Use Cases:** Centralized security visibility, compliance monitoring, security operations
+
+---
+
+### AWS Shield
+**ความสามารถ:** DDoS protection service ที่ protect applications บน AWS
+
+**ขอบเขต:**
+- **Shield Standard:** ฟรี, always-on protection, L3/L4/L7 DDoS protection
+- **Shield Advanced:** 24/7 DDoS Response Team, cost protection, WAF + CloudFront integration, health-based detection
+
+**Use Cases:** DDoS protection, availability protection, critical applications protection
+
+---
+
+### AWS WAF (Web Application Firewall)
+**ความสามารถ:** Web application firewall ที่ protect web apps จาก common exploits (SQL injection, XSS, etc.)
+
+**ขอบเขต:** Web ACLs, Rules (managed rules, custom rules), Rate limiting, IP blocking, geo-blocking, Bot Control, Captcha
+
+**Use Cases:** Web application security, OWASP Top 10 protection, API protection, bot mitigation
+
+---
+
+## 18. Serverless
+
+### AWS Lambda (ดู Compute)
+
+### Amazon DynamoDB (ดู Database)
+
+### Amazon S3 (ดู Storage)
+
+---
+
+## 19. Storage
+
+### Amazon EBS (Elastic Block Store)
+**ความสามารถ:** Block storage ระดับ production สำหรับ EC2 instances ที่ persist โดยอิสระจาก instance lifecycle
+
+**ขอบเขต:**
+- **Volume Types:** gp3 (general purpose SSD), gp2, io2 (provisioned IOPS SSD), st1 (throughput optimized HDD), sc1 (cold storage HDD)
+- **Features:** Encryption (EBS encryption), Snapshots, Multi-attach (io2 only), Fast snapshot restore
+
+**Use Cases:** Database storage, boot volumes, enterprise applications, data warehouses
+
+---
+
+### Amazon EFS (Elastic File System)
+**ความสามารถ:** Scalable file storage (NFS) สำหรับใช้กับ EC2 instances หลายตัวพร้อมกัน
+
+**ขอบเขต:** Standard and Infrequent Access classes, Encryption at rest, Performance mode (General Purpose/Max I/O), Throughput mode (Bursting/Provisioned), Access via mount targets in VPC
+
+**Use Cases:** Container storage, CMS, ML workloads, shared file storage, home directories
+
+---
+
+### Amazon FSx
+**ความสามารถ:** Managed third-party file systems ที่รองรับ Windows File Server (FSx for Windows File Server) และ Lustre (FSx for Lustre)
+
+**ขอบเขต:**
+- **FSx for Windows File Server:** SMB, Active Directory integration, DFS, daily backups
+- **FSx for Lustre:** S3 integration, HPC workloads, petabyte-scale, hot/cold storage tiers
+- **FSx for NetApp ONTAP:** NFS/SMB, data tiering, snapshots, cloning
+- **FSx for OpenZFS:** ZFS file system, NFS/SMB, snapshots
+
+**Use Cases:** Windows-based workloads, HPC, media processing, analytics, lift-and-shift Windows apps
+
+---
+
+### Amazon S3 (Simple Storage Service)
+**ความสามารถ:** Object storage ที่มีความสามารถ scale, durability, และ availability สูง สำหรับเก็บข้อมูลทุกประเภท
+
+**ขอบเขต:**
+- **Storage Classes:** S3 Standard, Intelligent-Tiering, Standard-IA, One Zone-IA, Glacier Instant Retrieval, Glacier Flexible Retrieval, Glacier Deep Archive
+- **Features:** Versioning, Object Lock (WORM), Replication, Lifecycle policies, Inventory, Batch Operations, Select, Multipart upload, Transfer Acceleration
+- **Security:** Block Public Access, ACLs, Policies, Encryption (SSE-S3, SSE-KMS, SSE-C), Access Points, MFA Delete
+
+**Use Cases:** Data lakes, backup and restore, archive, disaster recovery, static website hosting, big data analytics
+
+---
+
+### AWS Storage Gateway
+**ความสามารถ:** Hybrid storage service ที่ให้ on-premises applications เข้าถึง AWS storage อย่าง seamless
+
+**ขอบเขต:**
+- **File Gateway:** NFS/SMB เชื่อมต่อ S3
+- **Volume Gateway (Stored):** iSCSI-backed, primary data on-premises, async backup to S3
+- **Volume Gateway (Cached):** iSCSI-backed, data cached locally, primary data in S3
+- **Tape Gateway:** Virtual tape library (VTL) เชื่อมต่อ S3/Glacier
+
+**Use Cases:** Hybrid cloud storage, backup to cloud, tiered storage, disaster recovery
+
+---
+
+### AWS Backup
+**ความสามารถ:** Centralized backup service สำหรับ backup AWS resources อย่าง unified และ policy-driven
+
+**ขอบเขต:** Cross-service backup (EC2, EBS, RDS, Aurora, DynamoDB, EFS, FSx, Storage Gateway, etc.), Backup plans, Lifecycle policies, Vault lock (WORM), Cross-account backup
+
+**Use Cases:** Centralized backup management, compliance backup, cross-region backup, backup automation
+
+---
+
+## สรุปตาราง Services ทั้งหมด
+
+| หมวด | จำนวน Services |
+|------|----------------|
+| Analytics | 7 |
+| Application Integration | 4 |
+| Business Applications | 2 |
+| Cloud Financial Management | 3 |
+| Compute | 7 |
+| Containers | 3 |
+| Customer Enablement | 2 |
+| Database | 6 |
+| Developer Tools | 3 |
+| End User Computing | 3 |
+| Frontend Web and Mobile | 2 |
+| IoT | 1 |
+| Machine Learning | 3 |
+| Management and Governance | 15 |
+| Migration and Transfer | 7 |
+| Networking and Content Delivery | 6 |
+| Security, Identity, and Compliance | 19 |
+| Serverless | 3 |
+| Storage | 6 |
+| **รวม** | **102** |
+
+---
+
+*เอกสารนี้อ้างอิงจาก AWS Certified Cloud Practitioner Exam Guide (CLF-C02) และ AWS Official Documentation*
