@@ -36,6 +36,11 @@
 
 **ขอบเขต:** รองรับการ query ไฟล์ในรูปแบบ CSV, JSON, ORC, Parquet, Avro ทำงานร่วมกับ AWS Glue Data Catalog
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** วิเคราะห์ log จาก S3, BI reports, ad-hoc queries บน data lake
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/athena/latest/ug/)
@@ -46,6 +51,11 @@
 **ความสามารถ:** จัดการ Big Data framework (Apache Spark, Hadoop, HBase, Presto) บนคลัสเตอร์ของ EC2 instances ที่สามารถ scale ได้ตาม workload
 
 **ขอบเขต:** รองรับหลาย framework, สามารถใช้ spot instances เพื่อลดต้นทุน, ทำงานร่วมกับ S3 เป็น data layer
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data processing ขนาดใหญ่, machine learning, log analysis, real-time streaming
 
@@ -58,6 +68,11 @@
 
 **ขอบเขต:** Serverless, ไม่ต้องจัดการ servers, รองรับ Python และ Scala, มี built-in transforms
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Data lake building, data migration, data preparation ก่อน analytics
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/glue/latest/ug/)
@@ -68,6 +83,11 @@
 **ความสามารถ:** รวบรวม ประมวลผล และวิเคราะห์ streaming data แบบ real-time มี 4 ผลิตภัณฑ์: Kinesis Data Streams, Data Firehose, Data Analytics, Video Streams
 
 **ขอบเขต:** Kinesis Data Firehose ส่งข้อมูลไป S3/Redshift/ES โดยอัตโนมัติ, Kinesis Data Analytics สำหรับ SQL queries บน streaming data
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** IoT telemetry, log ingestion, real-time dashboards, fraud detection, live leaderboards
 
@@ -80,6 +100,11 @@
 
 **ขอบเขต:** รองรับการ scale แนวนอน, ทำงานแบบ cluster, สามารถทำ near real-time search
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Application search, log analytics, security analytics, monitoring
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/opensearch-service/latest/ug/)
@@ -91,6 +116,11 @@
 
 **ขอบเขต:** Serverless, ใช้ SPICE (in-memory engine) สำหรับ fast queries, รองรับ many data sources, mobile BI
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Executive dashboards, sales analytics, operational reporting, self-service BI
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/quicksight/latest/ug/)
@@ -101,6 +131,11 @@
 **ความสามารถ:** Data warehouse enterprise-grade ที่ใช้ SQL วิเคราะห์ข้อมูลขนาดใหญ่ รองรับ petabyte-scale ใช้ columnar storage และ massively parallel processing (MPP)
 
 **ขอบเขต:** รองรับ complex queries, federated queries กับ S3 และ operational DBs, ML-based optimization
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise data warehousing, business intelligence, data analytics
 
@@ -115,6 +150,11 @@
 
 **ขอบเขต:** รองรับ SaaS integration (Salesforce, Zendesk, etc.), schema registry, event filtering, event replay
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Microservices communication, SaaS integration, audit logging, real-time notifications
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/eventbridge/latest/ug/)
@@ -125,6 +165,11 @@
 **ความสามารถ:** Pub/sub messaging และ mobile notifications service ที่ส่ง messages จาก publisher ไปยัง subscribers (SQS, HTTP/S, Lambda, email, SMS, push notifications)
 
 **ขอบเขต:** Topics-based pub/sub, push-based delivery, รองรับ FIFO topics, รองรับ SMS และ email
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Application alerts, fanout messaging, mobile push notifications, event-driven workflows
 
@@ -137,6 +182,11 @@
 
 **ขอบเขต:** Serverless, fully managed, ไม่มี limit ของ message throughput, messages ถูกเก็บ 1-14 วัน
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Decoupling microservices, batch processing, task queues, request buffering
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/sqs/latest/ug/)
@@ -147,6 +197,11 @@
 **ความสามารถ:** Orchestration service สำหรับจัดลำดับ AWS Lambda functions และกิจกรรมอื่นๆ เป็น workflow ที่ visualize ได้
 
 **ขอบเขต:** รองรับ 200+ AWS service integrations, error handling, retry logic, branching, parallel execution
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Workflow automation, order processing, data processing pipelines, ETL orchestration
 
@@ -161,6 +216,11 @@
 
 **ขอบเขต:** CTI integration, IVR builder, real-time and historical analytics, AI-powered agents (Amazon Lex)
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Customer support centers, sales hotlines, help desks, outbound campaigns
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/connect/latest/ug/)
@@ -171,6 +231,11 @@
 **ความสามารถ:** Email service แบบ cloud-native สำหรับส่งและรับ email รองรับ transactional emails, marketing emails, mass emails
 
 **ขอบเขต:** ใช้ SMTP หรือ AWS SDK, DKIM/SPF verification, sandbox mode สำหรับทดสอบ, dedicated IPs สำหรับ reputation
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Transactional emails, marketing campaigns, system notifications, bounce/complaint handling
 
@@ -185,6 +250,11 @@
 
 **ขอบเขต:** สร้างได้ 2 budgets ฟรี (เพิ่มได้), รองรับ custom filters, ส่ง alert ได้หลายช่องทาง
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Cost monitoring, spend alerts, RI utilization tracking, anomaly detection
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/cost-management/latest/ug/)
@@ -196,6 +266,11 @@
 
 **ขอบเขต:** ดู cost ย้อนหลัง 12 เดือน, forecast ค่าใช้จ่าย, รองรับ tag-based filtering, built-in recommendations
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Cost trend analysis, cost attribution by team/project, cost optimization planning
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/cost-management/latest/ug/)
@@ -206,6 +281,11 @@
 **ความสามารถ:** ประมาณการค่าใช้จ่าย AWS ก่อนสร้าง resources ใช้วางแผน budget สำหรับโปรเจกต์ใหม่
 
 **ขอบเขต:** รองรับ almost all AWS services, ปรับ usage parameters ได้, export เป็น CSV
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Budget planning, project cost estimation, architecture cost comparison
 
@@ -219,6 +299,11 @@
 **ความสามารถ:** ปรับ capacity อัตโนมัติสำหรับหลาย AWS resources (EC2, ECS, DynamoDB, Aurora) ตั้งค่า scale-out/in ตาม metrics ที่กำหนด
 
 **ขอบเขต:** รองรับ EC2 Auto Scaling Groups, ECS tasks, DynamoDB tables/indexes, Aurora replicas
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Variable workloads, batch processing, web applications with traffic spikes
 
@@ -234,6 +319,11 @@
 - **Purchasing:** On-Demand, Reserved, Spot, Savings Plans, Dedicated Hosts, Dedicated Instances, Capacity Reservations
 - **Features:** AMI, Key Pairs, Security Groups, Placement Groups
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Web servers, databases, ML inference, batch processing, enterprise applications
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/ec2/latest/ug/)
@@ -244,6 +334,11 @@
 **ความสามารถ:** Container orchestration service สำหรับ run Docker containers บน EC2 instances หรือ Fargate
 
 **ขอบเขต:** รองรับ Docker Compose, service discovery, load balancing, auto scaling, IAM roles per task
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Microservices deployment, batch jobs, long-running applications, containerized web apps
 
@@ -256,6 +351,11 @@
 
 **ขอบเขต:** รองรับ standard Kubernetes, AWS Fargate integration, EKS Add-ons (CNI, CoreDNS, kube-proxy), AWS Outposts support
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Enterprise Kubernetes workloads, hybrid cloud, cloud-native applications requiring Kubernetes
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/eks/latest/ug/)
@@ -266,6 +366,11 @@
 **ความสามารถ:** PaaS-like service ที่ deploy และ scale web applications (Node.js, Python, Java, .NET, Go, PHP) โดยจัดการ infrastructure ให้อัตโนมัติ
 
 **ขอบเขต:** รองรับ many platforms, environment management, rolling updates, monitoring
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Quick application deployment, developers who want less ops overhead, prototypes
 
@@ -278,6 +383,11 @@
 
 **ขอบเขต:** Pay per task/pod runtime, ไม่ต้อง provision servers, รองรับ ARM and x86 architectures
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Serverless containers, microservices, periodic batch jobs, cost-sensitive workloads
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/AmazonECS/latest/ug/)
@@ -288,6 +398,11 @@
 **ความสามารถ:** Serverless compute service ที่ run code ตอบสนอง events โดยไม่ต้อง provision servers
 
 **ขอบเขต:** รองรับ many languages (Node.js, Python, Java, Go, Ruby, .NET, custom runtimes), 15-min max execution time, 10GB max memory per function, ephemeral storage 512MB-10GB
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Event-driven processing, API backends, data processing, automation, real-time file processing
 
@@ -301,6 +416,11 @@
 **ความสามารถ:** Managed container registry สำหรับเก็บ Docker และ OCI images ทำงานร่วมกับ ECS, EKS, Lambda
 
 **ขอบเขต:** Highly available, encryption at rest, image scanning, lifecycle policies, pull-through cache
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Container image storage, CI/CD pipelines, private image registries
 
@@ -321,6 +441,11 @@
 
 **ขอบเขต:** ครอบคลุมทุก certifications และ skill levels, มีเฉพาะบาง courses ฟรี
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** AWS skill development, certification preparation, team training
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/training/latest/ug/)
@@ -331,6 +456,11 @@
 **ความสามารถ:** แพลตฟอร์มเรียนรู้ digital ของ AWS มี courses, labs, AWS Cloud Quest (game-based learning)
 
 **ขอบเขต:** Individual learning plans, role-based learning paths, hands-on labs, exam prep
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Self-paced learning, certification prep, hands-on practice
 
@@ -345,6 +475,11 @@
 
 **ขอบเขต:** Automatic storage scaling, multi-AZ deployments, read replicas up to 15, global database (cross-region replication), Aurora Serverless v2
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Enterprise applications, SaaS applications, e-commerce, gaming
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/ug/)
@@ -355,6 +490,11 @@
 **ความสามารถ:** Fully managed NoSQL database แบบ key-value และ document ที่มี single-digit millisecond latency ทุก scale
 
 **ขอบเขต:** On-demand หรือ provisioned capacity modes, Global Tables (multi-region), DAX (in-memory cache), DynamoDB Streams, encryption at rest
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Web and mobile backends, gaming, IoT, real-time bidding, microservices
 
@@ -367,6 +507,11 @@
 
 **ขอบเขต:** Redis (cluster mode, pub/sub, sorted sets, persistence), Memcached (multi-threaded, SASL auth), automatic failover, backup/restore
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Session stores, caching, leaderboards, real-time analytics, message queues
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/elasticache/latest/ug/)
@@ -377,6 +522,11 @@
 **ความสามารถ:** Managed relational database service รองรับ 6 engines: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, Amazon Aurora
 
 **ขอบเขต:** Multi-AZ deployments, Read Replicas, automated backups, automated software patching, DB Subnet Groups
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Traditional web applications, e-commerce, CMS, business applications
 
@@ -389,6 +539,11 @@
 
 **ขอบเขต:** Continuous data replication (CDC), SCT สำหรับ schema conversion, รองรับ 20+ data sources
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Cloud migration, database modernization, development environment creation
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/dms/latest/ug/)
@@ -399,6 +554,11 @@
 **ความสามารถ:** แปลง database schemas และ code objects จาก Oracle, SQL Server, SAP ASE ไปเป็น formats ที่ RDS/Aurora/DynamoDB รองรับ
 
 **ขอบเขต:** รองรับ heterogeneous conversions, วิเคราะห์ complexity ของ conversion, สร้าง assessment report
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Database schema migration, heterogeneous to homogeneous migration
 
@@ -413,6 +573,11 @@
 
 **ขอบเขต:** Serverless, pay per minute, รองรับ many programming languages, Docker integration, รองรับ BYO build environments
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** CI/CD pipelines, automated builds, container builds, batch compilation
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/codebuild/latest/ug/)
@@ -424,6 +589,11 @@
 
 **ขอบเขต:** รองรับ custom workflows, 200+ integrations (GitHub, Jenkins, etc.), parallel execution, approval gates
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** CI/CD pipelines, release automation, multi-stage deployments
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/codepipeline/latest/ug/)
@@ -434,6 +604,11 @@
 **ความสามารถ:** Tracing service ที่ช่วยวิเคราะห์และ debug distributed applications เช่น microservices
 
 **ขอบเขต:** Request tracing, service maps, latency analysis, annotations, sampling controls
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Distributed system debugging, performance optimization, production issue investigation
 
@@ -448,6 +623,11 @@
 
 **ขอบเขต:** Windows and Linux applications, persistent or pooled fleets, user profile management, SSO integration
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Remote work, legacy application access, software training, contract workers
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/appstream2/latest/ug/)
@@ -459,6 +639,11 @@
 
 **ขอบเขต:** Windows and Linux desktops, AlwaysOn และ AutoStop bundles, BYOD (WorkSpaces Web), directory integration
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Remote employees, contractors, temporary workers, secure desktop environments
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/workspaces/latest/ug/)
@@ -469,6 +654,11 @@
 **ความสามารถ:** Browser-based access ไป SaaS และ internal applications โดยไม่ต้อง install อะไรบน device
 
 **ขอบเขต:** Zero trust architecture, no data stored on endpoints, integrated with IAM, cloud-hosted browsers
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Secure browsing, contractor access, BYOD environments, regulated industries
 
@@ -483,6 +673,11 @@
 
 **ขอบเขต:** Amplify CLI, Amplify Hosting (CI/CD, preview), Amplify DataStore (offline-first), Amplify Auth, Amplify API (GraphQL/REST)
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Web apps, React/Vue/Angular apps, mobile apps (iOS/Android), JAMstack
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/amplify/latest/ug/)
@@ -493,6 +688,11 @@
 **ความสามารถ:** Managed GraphQL service ที่ simplify application development โดยการเชื่อมต่อ frontend กับ multiple data sources
 
 **ขอบเขต:** Real-time subscriptions, offline sync (Amplify DataStore), fine-grained access control, Lambda resolvers
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Mobile backends, real-time collaboration apps, IoT dashboards, microservices integration
 
@@ -507,6 +707,11 @@
 
 **ขอบเขต:** MQTT, HTTP, WebSocket protocols, device shadow, rules engine, secure authentication (X.509 certificates, IAM)
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Smart home, industrial IoT, connected vehicles, asset tracking
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/iotcore/latest/ug/)
@@ -520,6 +725,11 @@
 
 **ขอบเขต:** Automatic Speech Recognition (ASR), Natural Language Understanding (NLU), slot filling, multi-turn conversations
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Customer service chatbots, IVR replacement, enterprise assistants, mobile apps
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/lex/latest/ug/)
@@ -531,6 +741,11 @@
 
 **ขอบเขต:** Document connectors (S3, SharePoint, Salesforce, etc.), semantic search, natural language queries, metadata search
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Enterprise knowledge management, document search, customer support search, research portals
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/kendra/latest/ug/)
@@ -541,6 +756,11 @@
 **ความสามารถ:** End-to-end ML platform ที่ prepare data, train models, และ deploy สำหรับ predictions
 
 **ขอบเขต:** SageMaker Studio (IDE), Ground Truth (data labeling), Autopilot (auto-ML), Neo (model optimization), JumpStart (pre-built models)
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Custom model training, pre-built AI applications, MLOps, real-time and batch inference
 
@@ -557,6 +777,11 @@
 
 **ขอบเขต:** Drift detection, Change Sets, StackSets (cross-account/region), Nested Stacks, Registry (third-party resources)
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Infrastructure provisioning, environment recreation, disaster recovery
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/cloudformation/latest/ug/)
@@ -567,6 +792,11 @@
 **ความสามารถ:** Governance, compliance, risk audit service ที่ log API calls ทั้งหมดใน AWS account
 
 **ขอบเขต:** Management events, data events, insights events, CloudTrail Lake (queryable log storage), multi-region trails
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Security analysis, incident investigation, compliance audit, operational troubleshooting
 
@@ -584,6 +814,11 @@
 - **Synthetics:** Canary monitoring
 - **Application Insights:** Auto-instrument for Java, .NET, etc.
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Infrastructure monitoring, application performance monitoring, log analysis, alerting
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/cloudwatch/latest/ug/)
@@ -594,6 +829,11 @@
 **ความสามารถ:** ML service ที่วิเคราะห์ usage patterns และแนะนำ optimal resource configurations (EC2, EBS, Lambda)
 
 **ขอบเขต:** Rightsizing recommendations, utilization data analysis, refresh recommendations, Savings Plans recommendations
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cost optimization, performance improvement, resource rightsizing
 
@@ -606,6 +846,11 @@
 
 **ขอบเขต:** Configuration history, conformance packs, rules (managed/custom), remediation, aggregator for multi-account
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Compliance auditing, security analysis, change management, inventory management
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/config/latest/ug/)
@@ -616,6 +861,11 @@
 **ความสามารถ:** 設置 landing zone อย่างปลอดภัยและปฏิบัติตาม best practices สำหรับ multi-account AWS environments
 
 **ขอบเขต:** Account Factory, Guardrails (preventive/detective), Dashboard, Enrollment, Service Catalog portfolios
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise multi-account governance, regulated environments, new AWS onboarding
 
@@ -628,6 +878,11 @@
 
 **ขอบเขต:** Service Health Dashboard (public), Your Account Health Dashboard (personalized), AWS Health API
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Proactive issue awareness, incident response, SLA monitoring
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/health/latest/ug/)
@@ -638,6 +893,11 @@
 **ความสามารถ:** Managed license service ที่ track, manage, และ control software licenses จาก vendors ต่างๆ
 
 **ขอบเขต:** License tracking, vendor-specific rules (Oracle, SQL Server, SAP), BYOL support, shared enforcement
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** License compliance, vendor audits, license optimization
 
@@ -650,6 +910,11 @@
 
 **ขอบเขต:** Resource browsing, actions, settings, mobile app (AWS Console Mobile)
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Daily AWS management, resource exploration, basic operations
 
 **ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/console/) | [User Guide](https://docs.aws.amazon.com/console/latest/ug/)
@@ -660,6 +925,11 @@
 **ความสามารถ:** Account management service สำหรับ central governance และ management ของ multiple AWS accounts
 
 **ขอบเขต:** Organizational Units (OUs), Service Control Policies (SCPs), Consolidated Billing, AI Services Opt-Out Policies, Tag policies
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Multi-account strategy, centralized billing, security baselines, departmental cost tracking
 
@@ -672,6 +942,11 @@
 
 **ขอบเขต:** Portfolios, Products, Constraints (launch/template/notification), IAM permissions, Versioning
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Self-service provisioning, standard environment deployment, compliance enforcement
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/servicecatalog/latest/ug/)
@@ -682,6 +957,11 @@
 **ความสามารถ:** แสดง AWS service quotas และ request quota increases สำหรับ account
 
 **ขอบเขต:** AWS Console และ API, template-based requests, Trusted Advisor integration for quotas
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Capacity planning, quota monitoring, resource limit management
 
@@ -701,6 +981,11 @@
 - **Parameter Store:** Secure storage (configuration/secrets)
 - **OpsCenter:** Aggregate operational tasks
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Fleet management, patch management, secrets management, operational automation
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/systems-manager/latest/ug/)
@@ -712,6 +997,11 @@
 
 **ขอบเขต:** Basic support: 6 checks (ฟรี), Business/Enterprise: all checks, automated actions for some checks
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Cost optimization, security hardening, performance tuning, limit monitoring
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/trustedadvisor/latest/ug/)
@@ -722,6 +1012,11 @@
 **ความสามารถ:** Review และ improve workloads ตาม AWS Well-Architected Framework 6 pillars
 
 **ขอบเขต:** Workload reviews, lens extensions, improvement plans, milestone tracking
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Architecture review, risk assessment, continuous improvement
 
@@ -736,6 +1031,11 @@
 
 **ขอบเขต:** Agent-based และ agentless collection, dependency mapping, usage and configuration data
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Migration planning, data center assessment, dependency analysis
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/application-discovery-service/latest/ug/)
@@ -746,6 +1046,11 @@
 **ความสามารถ:** Lift-and-shift migration service ที่ migrate physical, virtual, และ cloud servers ไป AWS อย่าง automated
 
 **ขอบเขต:** Continuous replication, cutover planning, validation, ใช้ Agent MGN Client
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Large-scale migrations, data center exit, cloud migration projects
 
@@ -760,6 +1065,11 @@
 
 **ขอบเขต:** TCO analysis, migration assessment, business case generation
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Migration business case, cost comparison, strategic planning
 
 **ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/migration-evaluator/) | [User Guide](https://docs.aws.amazon.com/migration-evaluator/latest/ug/)
@@ -770,6 +1080,11 @@
 **ความสามารถ:** Central hub สำหรับ track และ manage migrations ข้าม multiple AWS tools
 
 **ขอบเขต:** Migration tracking, unified view, tool integrations (MGN, DMS, etc.)
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Large migration program management, progress tracking, tool consolidation
 
@@ -788,6 +1103,11 @@
 - **Snowcone:** 8TB (smallest), สำหรับ space-constrained environments
 - **Snowmobile:** 100PB container, สำหรับ exabyte-scale transfers
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Data center migration, disaster recovery, remote site data transfer, edge computing
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/snowball/latest/ug/)
@@ -801,6 +1121,11 @@
 
 **ขอบเขต:** REST, HTTP, WebSocket APIs, Lambda integrations, AWS X-Ray tracing, throttling, caching, JWT/OAuth, API keys
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Serverless APIs, microservices backends, mobile backends, real-time applications
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/apigateway/latest/ug/)
@@ -811,6 +1136,11 @@
 **ความสามารถ:** Content Delivery Network (CDN) ที่ distribute content ไป users ทั่วโลกด้วย low latency
 
 **ขอบเขต:** Global network of 600+ PoPs, SNI-based TLS, Lambda@Edge, Origin Access Control (OAC), RTMP distribution (legacy), Functions
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Static content delivery, video streaming, dynamic content, API acceleration, malware protection
 
@@ -823,6 +1153,11 @@
 
 **ขอบเขต:** 1Gbps, 10Gbps, 100Gbps links, AWS Direct Connect SiteLink, VIFs (Public/Private/VLAN), LAG, redundant connections
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Hybrid cloud, large data transfers, consistent network performance, compliance requirements
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/directconnect/latest/ug/)
@@ -833,6 +1168,11 @@
 **ความสามารถ:** Highly available DNS และ domain registration service ที่ routing ด้วย latency, geolocation, health checks
 
 **ขอบเขต:** DNS records (A, AAAA, CNAME, MX, TXT, etc.), health checks, routing policies (Simple, Weighted, Latency, Geolocation, Failover, IP-based), domain registration, Route 53 Resolver
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** DNS management, domain registration, health check-based routing, disaster recovery
 
@@ -847,6 +1187,11 @@
 - **Site-to-Site VPN:** IPsec VPN ระหว่าง VPC และ on-premises, supports BGP
 - **Client VPN:** Managed client-based VPN (OpenVPN-based), SSL-VPN
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Hybrid cloud connectivity, remote access, site-to-site connections
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/vpn/latest/ug/)
@@ -859,6 +1204,11 @@
 **ขอบเขต:**
 - **Components:** Subnets (Public/Private), Route Tables, Internet Gateway, NAT Gateway, VPC Endpoints (Interface/Gateway), Peering, Security Groups, NACLs, VPN
 - **Features:** VPC CIDR blocks, DHCP options, DNS settings, IP addressing (IPv4/IPv6), VPC Flow Logs, Traffic Mirroring
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Isolated workloads, multi-tier applications, hybrid cloud, compliance isolation
 
@@ -873,6 +1223,11 @@
 
 **ขอบเขต:** Artifact Agreements (customer agreements), Artifact Reports (SOC, PCI, ISO, etc.), Audit Manager reports integration
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Compliance evidence gathering, security reviews, regulatory audits
 
 **ลิงค์อ้างอิง:** [Product Page](https://aws.amazon.com/artifact/) | [User Guide](https://docs.aws.amazon.com/artifact/latest/ug/)
@@ -883,6 +1238,11 @@
 **ความสามารถ:** Automated evidence collection service สำหรับ continuous compliance auditing
 
 **ขอบเขต:** Pre-built frameworks (SOC, PCI, GDPR, etc.), custom frameworks, automated evidence collection, assessment reports
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Continuous compliance, audit preparation, control testing automation
 
@@ -895,6 +1255,11 @@
 
 **ขอบเขต:** Free public certificates, import third-party CAs, ACM Private CA, auto-renewal, integration with ALB, CloudFront, API Gateway
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** HTTPS for websites, API security, encrypted communications
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/acm/latest/ug/)
@@ -905,6 +1270,11 @@
 **ความสามารถ:** Hardware Security Module (HSM) managed by AWS ที่ generate และ use encryption keys ใน single-tenant hardware
 
 **ขอบเขต:** FIPS 140-2 Level 3, PKCS#11, JCE, CNSA compliant, dedicated hardware, no AWS access to keys
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cryptographic operations, key storage for compliance, DNSSEC, code signing
 
@@ -917,6 +1287,11 @@
 
 **ขอบเขต:** User Pools (sign-up/sign-in), Identity Pools (AWS credentials), Social IdPs (Google, Facebook, Apple), SAML/OIDC, MFA
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Web/mobile app auth, microservice auth, B2C apps, access to AWS resources
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/cognito-identity/latest/ug/)
@@ -927,6 +1302,11 @@
 **ความสามารถ:** Analyze, investigate, และ identify root cause ของ security issues โดย aggregate logs และ apply ML
 
 **ขอบเขต:** Integrates with CloudTrail, VPC Flow Logs, GuardDuty findings, visual graphs, timeline analysis
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Security investigations, root cause analysis, behavioral analysis
 
@@ -942,6 +1322,11 @@
 - **Simple AD:** Samba-based, small workloads
 - **AD Connector:** Proxy to on-premises AD
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Windows workloads, SSO, user management, application authentication
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/directoryservice/latest/ug/)
@@ -953,6 +1338,11 @@
 
 **ขอบเขต:** WAF rules management, Shield Advanced protection, Security Groups policies, Centralized policy management
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Multi-account security management, organization-wide firewall policies
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/firewall-manager/latest/ug/)
@@ -963,6 +1353,11 @@
 **ความสามารถ:** Threat detection service ที่ continuously monitor สำหรับ malicious activity โดยใช้ ML
 
 **ขอบเขต:** CloudTrail event logs, VPC Flow Logs, DNS logs, EKS audit logs, S3 data events, malware protection (S3)
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Continuous threat detection, compromised credentials, cryptocurrency mining, data exfiltration
 
@@ -978,6 +1373,11 @@
 - **Access Methods:** Access Keys, Passwords, MFA, Service Control Policies (SCPs)
 - **Features:** Role-based access, federation, temporary credentials, policy conditions
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Permission management, least privilege enforcement, cross-account access, federation
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/iam/latest/ug/)
@@ -988,6 +1388,11 @@
 **ความสามารถ:** Single Sign-On (SSO) service สำหรับ connect AWS accounts และ business applications
 
 **ขอบเขต:** SSO to AWS accounts, SAML 2.0 applications, IAM Identity Center directory, Permission Sets, MFA
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise SSO, multi-account management, SaaS application access
 
@@ -1000,6 +1405,11 @@
 
 **ขอบเขต:** Network reachability analysis, package vulnerabilities (EC2), Lambda function scanning, container image scanning (ECR), CVE database
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Vulnerability scanning, security posture, compliance checking
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/inspector/latest/ug/)
@@ -1010,6 +1420,11 @@
 **ความสามารถ:** Managed encryption key service สำหรับ create และ control encryption keys
 
 **ขอบเขต:** Symmetric keys (AES-256), Asymmetric keys (RSA, ECC), AWS managed keys, Customer managed keys, Custom key stores (CloudHSM), Key rotation, FIPS 140-2 Level 2/3
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data encryption, compliance, key rotation, envelope encryption
 
@@ -1022,6 +1437,11 @@
 
 **ขอบเขต:** Sensitive data discovery, S3 inventory, automated findings, PII detection, policy findings
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Data loss prevention, compliance, sensitive data discovery, privacy protection
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/macie/latest/ug/)
@@ -1032,6 +1452,11 @@
 **ความสามารถ:** Share AWS resources ข้าม AWS accounts โดยไม่ต้อง duplicate
 
 **ขอบเขต:** Resource sharing (VPC subnets, Transit Gateways, License configs, etc.), Organizational units sharing
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Multi-account resource sharing, VPC sharing, shared services
 
@@ -1044,6 +1469,11 @@
 
 **ขอบเขต:** Secret rotation (RDS, Redshift, etc.), Automatic rotation, Cross-account access, Fine-grained IAM policies, Secret versioning
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Application credentials, database passwords, API keys, certificates
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/secrets-manager/latest/ug/)
@@ -1054,6 +1484,11 @@
 **ความสามารถ:** Central security dashboard ที่ aggregate และ prioritize security findings จาก multiple AWS และ third-party services
 
 **ขอบเขต:** Security standards (CIS, PCI DSS, AWS FSBP), Integrations (GuardDuty, Inspector, Macie, partner products), Automated remediation, Findings aggregation
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Centralized security visibility, compliance monitoring, security operations
 
@@ -1068,6 +1503,11 @@
 - **Shield Standard:** ฟรี, always-on protection, L3/L4/L7 DDoS protection
 - **Shield Advanced:** 24/7 DDoS Response Team, cost protection, WAF + CloudFront integration, health-based detection
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** DDoS protection, availability protection, critical applications protection
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/shield/latest/ug/)
@@ -1078,6 +1518,11 @@
 **ความสามารถ:** Web application firewall ที่ protect web apps จาก common exploits (SQL injection, XSS, etc.)
 
 **ขอบเขต:** Web ACLs, Rules (managed rules, custom rules), Rate limiting, IP blocking, geo-blocking, Bot Control, Captcha
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Web application security, OWASP Top 10 protection, API protection, bot mitigation
 
@@ -1104,6 +1549,11 @@
 - **Volume Types:** gp3 (general purpose SSD), gp2, io2 (provisioned IOPS SSD), st1 (throughput optimized HDD), sc1 (cold storage HDD)
 - **Features:** Encryption (EBS encryption), Snapshots, Multi-attach (io2 only), Fast snapshot restore
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Database storage, boot volumes, enterprise applications, data warehouses
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/ebs/latest/ug/)
@@ -1114,6 +1564,11 @@
 **ความสามารถ:** Scalable file storage (NFS) สำหรับใช้กับ EC2 instances หลายตัวพร้อมกัน
 
 **ขอบเขต:** Standard and Infrequent Access classes, Encryption at rest, Performance mode (General Purpose/Max I/O), Throughput mode (Bursting/Provisioned), Access via mount targets in VPC
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Container storage, CMS, ML workloads, shared file storage, home directories
 
@@ -1130,6 +1585,11 @@
 - **FSx for NetApp ONTAP:** NFS/SMB, data tiering, snapshots, cloning
 - **FSx for OpenZFS:** ZFS file system, NFS/SMB, snapshots
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Windows-based workloads, HPC, media processing, analytics, lift-and-shift Windows apps
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/fsx/latest/ug/)
@@ -1143,6 +1603,11 @@
 - **Storage Classes:** S3 Standard, Intelligent-Tiering, Standard-IA, One Zone-IA, Glacier Instant Retrieval, Glacier Flexible Retrieval, Glacier Deep Archive
 - **Features:** Versioning, Object Lock (WORM), Replication, Lifecycle policies, Inventory, Batch Operations, Select, Multipart upload, Transfer Acceleration
 - **Security:** Block Public Access, ACLs, Policies, Encryption (SSE-S3, SSE-KMS, SSE-C), Access Points, MFA Delete
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data lakes, backup and restore, archive, disaster recovery, static website hosting, big data analytics
 
@@ -1159,6 +1624,11 @@
 - **Volume Gateway (Cached):** iSCSI-backed, data cached locally, primary data in S3
 - **Tape Gateway:** Virtual tape library (VTL) เชื่อมต่อ S3/Glacier
 
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+
 **Use Cases:** Hybrid cloud storage, backup to cloud, tiered storage, disaster recovery
 
 **ลิงค์อ้างอิง:** [User Guide](https://docs.aws.amazon.com/storagegateway/latest/ug/)
@@ -1169,6 +1639,11 @@
 **ความสามารถ:** Centralized backup service สำหรับ backup AWS resources อย่าง unified และ policy-driven
 
 **ขอบเขต:** Cross-service backup (EC2, EBS, RDS, Aurora, DynamoDB, EFS, FSx, Storage Gateway, etc.), Backup plans, Lifecycle policies, Vault lock (WORM), Cross-account backup
+
+
+**การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
+
+**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Centralized backup management, compliance backup, cross-region backup, backup automation
 
