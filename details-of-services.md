@@ -39,7 +39,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** วิเคราะห์ log จาก S3, BI reports, ad-hoc queries บน data lake
 
@@ -55,7 +55,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data processing ขนาดใหญ่, machine learning, log analysis, real-time streaming
 
@@ -71,7 +71,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data lake building, data migration, data preparation ก่อน analytics
 
@@ -87,7 +87,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** IoT telemetry, log ingestion, real-time dashboards, fraud detection, live leaderboards
 
@@ -103,7 +103,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Application search, log analytics, security analytics, monitoring
 
@@ -119,7 +119,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Executive dashboards, sales analytics, operational reporting, self-service BI
 
@@ -135,7 +135,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise data warehousing, business intelligence, data analytics
 
@@ -153,7 +153,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Microservices communication, SaaS integration, audit logging, real-time notifications
 
@@ -169,7 +169,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Application alerts, fanout messaging, mobile push notifications, event-driven workflows
 
@@ -185,7 +185,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Decoupling microservices, batch processing, task queues, request buffering
 
@@ -201,7 +201,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Workflow automation, order processing, data processing pipelines, ETL orchestration
 
@@ -219,7 +219,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Customer support centers, sales hotlines, help desks, outbound campaigns
 
@@ -235,7 +235,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Transactional emails, marketing campaigns, system notifications, bounce/complaint handling
 
@@ -253,7 +253,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cost monitoring, spend alerts, RI utilization tracking, anomaly detection
 
@@ -269,7 +269,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cost trend analysis, cost attribution by team/project, cost optimization planning
 
@@ -285,7 +285,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Budget planning, project cost estimation, architecture cost comparison
 
@@ -303,7 +303,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Variable workloads, batch processing, web applications with traffic spikes
 
@@ -322,7 +322,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Web servers, databases, ML inference, batch processing, enterprise applications
 
@@ -338,7 +338,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Microservices deployment, batch jobs, long-running applications, containerized web apps
 
@@ -354,7 +354,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise Kubernetes workloads, hybrid cloud, cloud-native applications requiring Kubernetes
 
@@ -370,7 +370,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Quick application deployment, developers who want less ops overhead, prototypes
 
@@ -386,7 +386,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Serverless containers, microservices, periodic batch jobs, cost-sensitive workloads
 
@@ -402,7 +402,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Event-driven processing, API backends, data processing, automation, real-time file processing
 
@@ -420,7 +420,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Container image storage, CI/CD pipelines, private image registries
 
@@ -444,7 +444,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** AWS skill development, certification preparation, team training
 
@@ -460,7 +460,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Self-paced learning, certification prep, hands-on practice
 
@@ -478,7 +478,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise applications, SaaS applications, e-commerce, gaming
 
@@ -494,7 +494,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Web and mobile backends, gaming, IoT, real-time bidding, microservices
 
@@ -510,7 +510,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Session stores, caching, leaderboards, real-time analytics, message queues
 
@@ -526,7 +526,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Traditional web applications, e-commerce, CMS, business applications
 
@@ -542,7 +542,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cloud migration, database modernization, development environment creation
 
@@ -558,7 +558,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Database schema migration, heterogeneous to homogeneous migration
 
@@ -576,7 +576,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** CI/CD pipelines, automated builds, container builds, batch compilation
 
@@ -592,7 +592,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** CI/CD pipelines, release automation, multi-stage deployments
 
@@ -608,7 +608,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Distributed system debugging, performance optimization, production issue investigation
 
@@ -626,7 +626,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Remote work, legacy application access, software training, contract workers
 
@@ -642,7 +642,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Remote employees, contractors, temporary workers, secure desktop environments
 
@@ -658,7 +658,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Secure browsing, contractor access, BYOD environments, regulated industries
 
@@ -676,7 +676,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Web apps, React/Vue/Angular apps, mobile apps (iOS/Android), JAMstack
 
@@ -692,7 +692,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Mobile backends, real-time collaboration apps, IoT dashboards, microservices integration
 
@@ -710,7 +710,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Smart home, industrial IoT, connected vehicles, asset tracking
 
@@ -728,7 +728,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Customer service chatbots, IVR replacement, enterprise assistants, mobile apps
 
@@ -744,7 +744,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise knowledge management, document search, customer support search, research portals
 
@@ -760,7 +760,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Custom model training, pre-built AI applications, MLOps, real-time and batch inference
 
@@ -780,7 +780,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Infrastructure provisioning, environment recreation, disaster recovery
 
@@ -796,7 +796,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Security analysis, incident investigation, compliance audit, operational troubleshooting
 
@@ -817,7 +817,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Infrastructure monitoring, application performance monitoring, log analysis, alerting
 
@@ -833,7 +833,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cost optimization, performance improvement, resource rightsizing
 
@@ -849,7 +849,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Compliance auditing, security analysis, change management, inventory management
 
@@ -865,7 +865,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise multi-account governance, regulated environments, new AWS onboarding
 
@@ -881,7 +881,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Proactive issue awareness, incident response, SLA monitoring
 
@@ -897,7 +897,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** License compliance, vendor audits, license optimization
 
@@ -913,7 +913,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Daily AWS management, resource exploration, basic operations
 
@@ -929,7 +929,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Multi-account strategy, centralized billing, security baselines, departmental cost tracking
 
@@ -945,7 +945,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Self-service provisioning, standard environment deployment, compliance enforcement
 
@@ -961,7 +961,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Capacity planning, quota monitoring, resource limit management
 
@@ -984,7 +984,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Fleet management, patch management, secrets management, operational automation
 
@@ -1000,7 +1000,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cost optimization, security hardening, performance tuning, limit monitoring
 
@@ -1016,7 +1016,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Architecture review, risk assessment, continuous improvement
 
@@ -1034,7 +1034,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Migration planning, data center assessment, dependency analysis
 
@@ -1050,7 +1050,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Large-scale migrations, data center exit, cloud migration projects
 
@@ -1068,7 +1068,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Migration business case, cost comparison, strategic planning
 
@@ -1084,7 +1084,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Large migration program management, progress tracking, tool consolidation
 
@@ -1106,7 +1106,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data center migration, disaster recovery, remote site data transfer, edge computing
 
@@ -1124,7 +1124,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Serverless APIs, microservices backends, mobile backends, real-time applications
 
@@ -1140,7 +1140,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Static content delivery, video streaming, dynamic content, API acceleration, malware protection
 
@@ -1156,7 +1156,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Hybrid cloud, large data transfers, consistent network performance, compliance requirements
 
@@ -1172,7 +1172,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** DNS management, domain registration, health check-based routing, disaster recovery
 
@@ -1190,7 +1190,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Hybrid cloud connectivity, remote access, site-to-site connections
 
@@ -1208,7 +1208,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Isolated workloads, multi-tier applications, hybrid cloud, compliance isolation
 
@@ -1226,7 +1226,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Compliance evidence gathering, security reviews, regulatory audits
 
@@ -1242,7 +1242,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Continuous compliance, audit preparation, control testing automation
 
@@ -1258,7 +1258,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** HTTPS for websites, API security, encrypted communications
 
@@ -1274,7 +1274,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Cryptographic operations, key storage for compliance, DNSSEC, code signing
 
@@ -1290,7 +1290,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Web/mobile app auth, microservice auth, B2C apps, access to AWS resources
 
@@ -1306,7 +1306,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Security investigations, root cause analysis, behavioral analysis
 
@@ -1325,7 +1325,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Windows workloads, SSO, user management, application authentication
 
@@ -1341,7 +1341,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Multi-account security management, organization-wide firewall policies
 
@@ -1357,7 +1357,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Continuous threat detection, compromised credentials, cryptocurrency mining, data exfiltration
 
@@ -1376,7 +1376,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Permission management, least privilege enforcement, cross-account access, federation
 
@@ -1392,7 +1392,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Enterprise SSO, multi-account management, SaaS application access
 
@@ -1408,7 +1408,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Vulnerability scanning, security posture, compliance checking
 
@@ -1424,7 +1424,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data encryption, compliance, key rotation, envelope encryption
 
@@ -1440,7 +1440,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data loss prevention, compliance, sensitive data discovery, privacy protection
 
@@ -1456,7 +1456,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Multi-account resource sharing, VPC sharing, shared services
 
@@ -1472,7 +1472,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Application credentials, database passwords, API keys, certificates
 
@@ -1488,7 +1488,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Centralized security visibility, compliance monitoring, security operations
 
@@ -1506,7 +1506,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** DDoS protection, availability protection, critical applications protection
 
@@ -1522,7 +1522,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Web application security, OWASP Top 10 protection, API protection, bot mitigation
 
@@ -1552,7 +1552,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Database storage, boot volumes, enterprise applications, data warehouses
 
@@ -1568,7 +1568,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Container storage, CMS, ML workloads, shared file storage, home directories
 
@@ -1588,7 +1588,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Windows-based workloads, HPC, media processing, analytics, lift-and-shift Windows apps
 
@@ -1607,7 +1607,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Data lakes, backup and restore, archive, disaster recovery, static website hosting, big data analytics
 
@@ -1627,7 +1627,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Hybrid cloud storage, backup to cloud, tiered storage, disaster recovery
 
@@ -1643,7 +1643,7 @@
 
 **การทำงาน:** บริการนี้ทำงานโดยการประมวลผลข้อมูลและจัดการคำขอผ่านระบบ cloud infrastructure ของ AWS โดยอัตโนมัติ รองรับการ scale ตามปริมาณงานและผสานการทำงานกับบริการอื่นใน AWS ecosystem
 
-**การบูรณาการ:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
+**การใช้งานร่วม:** สามารถทำงานร่วมกับบริการ AWS อื่นๆ เช่น IAM, CloudWatch, S3, Lambda และ VPC เพื่อสร้าง end-to-end solutions รองรับการเชื่อมต่อกับ third-party applications ผ่าน APIs และ event-driven architecture
 
 **Use Cases:** Centralized backup management, compliance backup, cross-region backup, backup automation
 
