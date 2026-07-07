@@ -1,0 +1,744 @@
+import './S3Page.css'
+
+export default function S3Page() {
+  return (
+    <div className="s3-page">
+      {/* HERO */}
+      <div className="s3-hero">
+        <div className="badge">Storage Service</div>
+        <h1>Amazon S3 — คู่มือฉบับสมบูรณ์</h1>
+        <p>
+          ครอบคลุมทุกเนื้อหาสำหรับเตรียมสอบ AWS Certification: Bucket, Object,
+          Storage Classes, Security, Replication, Lifecycle, Performance, Monitoring และ Pricing
+        </p>
+        <div className="refs">
+          แหล่งอ้างอิง:{' '}
+          <a href="https://docs.aws.amazon.com/s3/" target="_blank" rel="noopener noreferrer">
+            S3 User Guide
+          </a>{' '}
+          ·{' '}
+          <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html" target="_blank" rel="noopener noreferrer">
+            Storage Classes
+          </a>{' '}
+          ·{' '}
+          <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/" target="_blank" rel="noopener noreferrer">
+            API Reference
+          </a>
+        </div>
+      </div>
+
+      {/* TOC */}
+      <div className="s3-toc-wrap">
+        <div className="s3-toc">
+          <span className="s3-toc-label">Sections</span>
+          <a href="#s1">1. ภาพรวม</a>
+          <a href="#s2">2. Buckets & Objects</a>
+          <a href="#s3">3. Storage Classes</a>
+          <a href="#s4">4. Features</a>
+          <a href="#s5">5. Security</a>
+          <a href="#s6">6. Data Protection</a>
+          <a href="#s7">7. Networking</a>
+          <a href="#s8">8. Batch Ops</a>
+          <a href="#s9">9. Performance</a>
+          <a href="#s10">10. Monitoring</a>
+          <a href="#s11">11. Static Website</a>
+          <a href="#s12">12. Pricing</a>
+          <a href="#s13">13. Use Cases</a>
+          <a href="#s14">14. Integration</a>
+          <a href="#s15">15. Glossary</a>
+          <a href="#s16">16. ลิงค์อ้างอิง</a>
+        </div>
+      </div>
+
+      {/* MAIN */}
+      <div className="s3-main">
+
+        {/* SECTION 1 */}
+        <section id="s1" className="s3-section">
+          <h2><span className="num">1</span> ภาพรวม (Overview)</h2>
+
+          <p>
+            Amazon Simple Storage Service (Amazon S3) คือ <strong>object storage service</strong> ที่ให้บริการเก็บข้อมูลในรูปแบบ
+            object ใน cloud ด้วยความสามารถระดับ enterprise ที่ scale ได้ไม่จำกัด
+          </p>
+
+          <div className="s3-grid-3">
+            <div className="s3-card">
+              <h4>Store</h4>
+              <p>เก็บทุกไฟล์ — documents, images, videos, datasets, backups ขนาด 0 bytes ถึง 5 TB</p>
+            </div>
+            <div className="s3-card green">
+              <h4>Retrieve</h4>
+              <p>ดึงข้อมูลได้จากที่ใดก็ได้ผ่าน internet ด้วย REST API หรือ CLI</p>
+            </div>
+            <div className="s3-card orange">
+              <h4>Protect</h4>
+              <p>ปกป้องข้อมูลด้วย 11 9's durability (99.999999999%) และ security ระดับสูง</p>
+            </div>
+          </div>
+
+          <div className="s3-callout green">
+            <strong>11 9's Durability</strong> — ถ้าเก็บ 10,000,000 objects คาดว่าจะเสียหายเฉลี่ย 1 object
+            ต่อ 10,000 ปี มาพร้อม Availability 99.99% (S3 Standard)
+          </div>
+
+          <h3>S3 ทำอะไรได้บ้าง</h3>
+          <ul>
+            <li><strong>Provision</strong> ไม่จำกัด storage — ไม่ต้องวางแผน capacity ล่วงหน้า</li>
+            <li><strong>Pay</strong> เฉพาะสิ่งที่ใช้งานจริง (pay-as-you-go)</li>
+            <li><strong>Manage</strong> การเข้าถึง, versioning, lifecycle ได้อย่างละเอียด</li>
+            <li><strong>Analyze</strong> ข้อมูลในตัว (S3 Analytics, S3 Select)</li>
+          </ul>
+        </section>
+
+        <hr />
+
+        {/* SECTION 2 */}
+        <section id="s2" className="s3-section">
+          <h2><span className="num">2</span> พื้นฐาน: Buckets และ Objects</h2>
+
+          <h3>2.1 Bucket</h3>
+          <p>Bucket คือ container ระดับบนสุดสำหรับเก็บ objects — เปรียบได้กับ top-level folder</p>
+
+          <div className="s3-grid-2">
+            <div className="s3-card yellow">
+              <h4>Global Uniqueness</h4>
+              <p>ทุก bucket ต้องมีชื่อไม่ซ้ำกันทั่วโลก เพราะใช้ namespace เดียวกันทั้ง AWS</p>
+            </div>
+            <div className="s3-card">
+              <h4>Regional</h4>
+              <p>ถูกเก็บใน specific AWS Region แต่เข้าถึงได้จากทั่วโลกผ่าน global bucket name</p>
+            </div>
+          </div>
+
+          <h4>Bucket Naming Rules</h4>
+          <ul>
+            <li>ชื่อ: <strong>3-63 ตัวอักษร</strong></li>
+            <li>ใช้ได้: lowercase letters, numbers, periods (<code>.</code>), hyphens (<code>-</code>)</li>
+            <li>ห้ามเริ่มต้นด้วย period</li>
+            <li>ห้ามจบด้วย period</li>
+            <li>ห้ามใช้ IP format (เช่น <code>192.168.5.11</code>)</li>
+          </ul>
+
+          <div className="s3-callout orange">
+            <strong>Limit:</strong> Default 100 buckets ต่อ account (ขอเพิ่มได้)
+          </div>
+
+          <h3>2.2 Object</h3>
+          <p>Object คือไฟล์ที่เก็บใน S3 ประกอบด้วย 5 ส่วนหลัก:</p>
+
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead>
+                <tr><th>Component</th><th>คำอธิบาย</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Key</strong></td><td>ชื่อ object รวม path เช่น <code>photos/vacation/beach.jpg</code></td></tr>
+                <tr><td><strong>Value</strong></td><td>ข้อมูล (data content) — ขนาด 0 bytes ถึง <strong>5 TB</strong></td></tr>
+                <tr><td><strong>Version ID</strong></td><td>Unique ID สำหรับแต่ละ version ของ object (ถ้าเปิด versioning)</td></tr>
+                <tr><td><strong>Metadata</strong></td><td>ข้อมูลอธิบาย object — system-defined หรือ user-defined</td></tr>
+                <tr><td><strong>Tags</strong></td><td>Key-value pairs สำหรับ labeling (สูงสุด 10 tags ต่อ object)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Object URL Format</h4>
+<pre><code>{`https://<bucket-name>.s3.<region>.amazonaws.com/<key>
+# หรือ
+https://s3.<region>.amazonaws.com/<bucket-name>/<key>`}</code></pre>
+
+          <h3>2.3 S3 Prefixes และ Folder Structure</h3>
+          <p>S3 ไม่มี directory แท้ๆ แต่ใช้ <strong>key prefixes</strong> จำลองโครงสร้าง folder ได้:</p>
+<pre><code>{`photos/
+  vacation/
+    beach.jpg        → key: "photos/vacation/beach.jpg"
+  profile/
+    avatar.png       → key: "photos/profile/avatar.png"`}</code></pre>
+        </section>
+
+        <hr />
+
+        {/* SECTION 3 */}
+        <section id="s3" className="s3-section">
+          <h2><span className="num">3</span> Storage Classes</h2>
+
+          <p>S3 มี 8 storage classes เพื่อรองรับ use case และ cost ที่แตกต่างกัน</p>
+
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead>
+                <tr>
+                  <th>Storage Class</th>
+                  <th>ความถี่เข้าถึง</th>
+                  <th>Retrieval Time</th>
+                  <th>Min Duration</th>
+                  <th>Use Case</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>S3 Standard</strong></td><td>บ่อย</td><td>Instant (&lt;ms)</td><td>None</td><td>Active data, web hosting</td></tr>
+                <tr><td><strong>S3 Intelligent-Tiering</strong></td><td>เปลี่ยนแปลง</td><td>Instant</td><td>None</td><td>Unknown patterns, data lakes</td></tr>
+                <tr><td><strong>S3 Standard-IA</strong></td><td>น้อย</td><td>Instant (&lt;ms)</td><td>30 days</td><td>DR, long-term storage</td></tr>
+                <tr><td><strong>S3 Glacier Instant</strong></td><td>หายากมาก</td><td>Instant (&lt;1 sec)</td><td>90 days</td><td>Archival ที่ต้อง access ทันที</td></tr>
+                <tr><td><strong>S3 Glacier Flexible</strong></td><td>หายากมาก</td><td>1 min – 12 hr</td><td>90 days</td><td>Tape replacement</td></tr>
+                <tr><td><strong>S3 Glacier Deep Archive</strong></td><td>หายากที่สุด</td><td>12–48 hr</td><td>180 days</td><td>Compliance, 10yr+ retention</td></tr>
+                <tr><td><strong>S3 One Zone-IA</strong></td><td>น้อย</td><td>Instant (&lt;ms)</td><td>30 days</td><td>Reproducible data</td></tr>
+                <tr><td><strong>S3 Express One Zone</strong></td><td>บ่อยมาก</td><td>Single-digit ms</td><td>None</td><td>Latency-sensitive workloads</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>3.1 S3 Intelligent-Tiering</h3>
+          <p>ย้าย object ระหว่าง tiers อัตโนมัติตาม usage pattern โดยไม่มี retrieval charges:</p>
+          <div className="s3-grid-2">
+            <div className="s3-card">
+              <h4>Tiers</h4>
+              <p>
+                • Frequent Access — สำหรับ object ที่ใช้บ่อย<br />
+                • Infrequent Access — ไม่เข้าถึง 30+ วัน<br />
+                • Archive Instant — ไม่เข้าถึง 90+ วัน<br />
+                • Deep Archive — ไม่เข้าถึง 180+ วัน
+              </p>
+            </div>
+            <div className="s3-card green">
+              <h4>Cost</h4>
+              <p>
+                ค่า storage เหมือน Standard บวกค่า monitoring $0.0025 per 1,000 objects ต่อเดือน
+                เหมาะสำหรับ access pattern ที่ไม่แน่นอน
+              </p>
+            </div>
+          </div>
+
+          <h3>3.2 S3 Glacier Retrieval Options</h3>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Option</th><th>เวลา</th><th>Use Case</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Expedited</strong></td><td>1–5 นาที</td><td>Urgent retrieval</td></tr>
+                <tr><td><strong>Standard</strong></td><td>3–12 ชั่วโมง</td><td>Standard retrieval</td></tr>
+                <tr><td><strong>Bulk</strong></td><td>5–12 ชั่วโมง</td><td>Large amounts, <strong>free</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 4 */}
+        <section id="s4" className="s3-section">
+          <h2><span className="num">4</span> S3 Features</h2>
+
+          <h3>4.1 S3 Versioning</h3>
+          <p>เก็บรักษาทุก version เมื่อ overwrite หรือ delete — ดึง version เก่ากลับมาได้เสมอ</p>
+          <ul>
+            <li>เปิด/ปิดได้ระดับ bucket</li>
+            <li>เก็บทุก version รวมถึง <strong>delete markers</strong></li>
+            <li>สามารถ <strong>suspend</strong> versioning ได้</li>
+            <li>มี Lifecycle rules สำหรับจัดการ noncurrent versions</li>
+          </ul>
+          <div className="s3-callout orange">
+            <strong>Delete behavior:</strong> Delete object โดยไม่ระบุ version → สร้าง delete marker ไม่ใช่ลบจริง ·
+            Delete version เฉพาะ → ลบจริง · ลบ delete marker → restore object ได้
+          </div>
+
+          <h3>4.2 S3 Replication</h3>
+          <div className="s3-grid-2">
+            <div className="s3-card">
+              <h4>CRR — Cross-Region</h4>
+              <p>Replicate ไปยัง bucket อื่นคนละ Region เหมาะสำหรับ DR และลด latency</p>
+            </div>
+            <div className="s3-card green">
+              <h4>SRR — Same-Region</h4>
+              <p>Replicate ใน Region เดียวกัน เหมาะสำหรับ backup และ compliance</p>
+            </div>
+          </div>
+          <div className="s3-callout purple">
+            <strong>S3 RTC (Replication Time Control)</strong> — Replicate ภายใน 15 นาที guaranteed สำหรับ workload ที่ต้องการ RTO ต่ำ
+          </div>
+
+          <h3>4.3 S3 Multipart Upload</h3>
+          <p>แบ่ง upload เป็นหลายส่วนสำหรับไฟล์ขนาดใหญ่ (5 MB – 5 TB) แนะนำสำหรับไฟล์ &gt; 100 MB:</p>
+<pre><code>{`1. Initiate Multipart Upload  →  ได้ Upload ID
+2. Upload Parts                →  ส่ง Part Number + ETag กลับมา
+3. Complete Multipart Upload   →  S3 ประกอบ parts เป็น object`}</code></pre>
+          <div className="s3-callout green">
+            <strong>Benefits:</strong> Resume ได้ถ้าล้มเหลว (retry เฉพาะ part ที่ล้มเหลว) · เร็วขึ้นเพราะ
+            upload parallel · รองรับไฟล์ 5 TB
+          </div>
+
+          <h3>4.4 S3 Select</h3>
+          <p>Query object โดยตรงด้วย SQL-like syntax — ดึงเฉพาะ subset ที่ต้องการ:</p>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Format</th><th>รองรับ</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Input</strong></td><td>CSV, JSON, Parquet, GZIP, BZIP2</td></tr>
+                <tr><td><strong>Output</strong></td><td>CSV, JSON</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="s3-callout">
+            ลด data transfer อย่างมาก — บางครั้งถึง <strong>99%</strong> เมื่อต้องการ subset ของ large dataset
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 5 */}
+        <section id="s5" className="s3-section">
+          <h2><span className="num">5</span> Security</h2>
+
+          <h3>5.1 S3 Block Public Access</h3>
+          <p>
+            ตั้งค่าระดับ account หรือ bucket เพื่อป้องกัน accidental public exposure —{' '}
+            <strong>Default: enabled</strong> สำหรับ bucket ใหม่ทุก bucket
+          </p>
+
+          <h3>5.2 Access Control</h3>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Method</th><th>คำอธิบาย</th><th>Recommendation</th></tr></thead>
+              <tbody>
+                <tr><td><strong>IAM Policies</strong></td><td>ควบคุม access ผ่าน IAM users/roles</td><td>✅ แนะนำ</td></tr>
+                <tr><td><strong>Bucket Policies</strong></td><td>JSON policy ที่ attach กับ bucket</td><td>✅ ดีสำหรับ cross-account</td></tr>
+                <tr><td><strong>ACLs</strong></td><td>Legacy permission model</td><td>⚠️ ใช้เมื่อจำเป็น</td></tr>
+                <tr><td><strong>Access Points</strong></td><td>Named endpoints สำหรับแต่ละ use case</td><td>✅ ดีสำหรับ complex patterns</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>5.3 Encryption</h3>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Type</th><th>Key Management</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr><td><strong>SSE-S3</strong></td><td>S3-managed (AES-256)</td><td>✅ เรียบง่าย, S3 จัดการทุกอย่าง</td></tr>
+                <tr><td><strong>SSE-KMS</strong></td><td>AWS KMS keys</td><td>Audit ได้ละเอียด, ควบคุม key rotation</td></tr>
+                <tr><td><strong>SSE-C</strong></td><td>Customer-provided keys</td><td>S3 ไม่เก็บ key, ลูกค้าต้องจัดการเอง</td></tr>
+                <tr><td><strong>CSE</strong></td><td>Client-side (ก่อน upload)</td><td>ใช้ AWS Encryption SDK หรือ library อื่น</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>5.4 S3 Object Lock (WORM)</h3>
+          <p>ป้องกัน object ถูก overwrite หรือ delete ตามกฎหมาย:</p>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Mode</th><th>ป้องกัน</th><th>Bypass</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Governance</strong></td><td>ลบ/overwrite ไม่ได้โดยไม่มี permission</td><td>IAM permission พิเศษ bypass ได้</td></tr>
+                <tr><td><strong>Compliance</strong></td><td>ลบ/overwrite ไม่ได้เด็ดขาด</td><td>ไม่มีใคร bypass ได้ จนหมด retention</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="s3-callout">
+            <strong>Legal Hold:</strong> ไม่มีวันหมด — ปลดได้เมื่อต้องการ (ต้องมี{' '}
+            <code>s3:PutObjectLegalHold</code> permission)
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 6 */}
+        <section id="s6" className="s3-section">
+          <h2><span className="num">6</span> Data Protection และ Backup</h2>
+
+          <h3>6.1 S3 Lifecycle Policies</h3>
+          <p>Automate object transitions และ expirations อัตโนมัติ:</p>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Action</th><th>คำอธิบาย</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Transition to Standard-IA</strong></td><td>ย้ายหลัง 30 วัน (default min)</td></tr>
+                <tr><td><strong>Transition to Glacier</strong></td><td>ย้ายหลัง 90 วัน (default min)</td></tr>
+                <tr><td><strong>Transition to Deep Archive</strong></td><td>ย้ายหลัง 180 วัน (default min)</td></tr>
+                <tr><td><strong>Object Expiration</strong></td><td>ลบ object หลัง X วัน</td></tr>
+                <tr><td><strong>Abort Incomplete Multipart Upload</strong></td><td>ลบ parts ที่ยังไม่ complete หลัง X วัน</td></tr>
+                <tr><td><strong>Noncurrent Version</strong></td><td>จัดการ previous versions หลัง X วัน</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>6.2 Backup Options</h3>
+          <div className="s3-grid-3">
+            <div className="s3-card">
+              <h4>S3 Replication</h4>
+              <p>Sync ไป bucket อื่น (same หรือ cross-region) อัตโนมัติ</p>
+            </div>
+            <div className="s3-card green">
+              <h4>AWS Backup</h4>
+              <p>Centralized backup รวม S3 กับ services อื่นๆ</p>
+            </div>
+            <div className="s3-card orange">
+              <h4>Object Lock</h4>
+              <p>Immutable storage สำหรับ compliance และ litigation</p>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 7 */}
+        <section id="s7" className="s3-section">
+          <h2><span className="num">7</span> Networking และ Data Access</h2>
+
+          <h3>7.1 VPC Endpoints for S3</h3>
+          <p>เชื่อมต่อ S3 โดยไม่ต้องผ่าน internet:</p>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Type</th><th>Description</th><th>ค่าใช้จ่าย</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Gateway Endpoint</strong></td><td>ใช้ route table — สำหรับ S3 เท่านั้น</td><td>ฟรี</td></tr>
+                <tr><td><strong>Interface Endpoint</strong></td><td>ใช้ ENI + private IP (PrivateLink)</td><td>มีค่าใช้จ่าย</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>7.2 S3 Event Notifications</h3>
+          <p>Trigger actions เมื่อเกิด events บน bucket:</p>
+          <div className="s3-grid-2">
+            <div className="s3-card">
+              <h4>Event Types</h4>
+              <p>
+                <code>s3:ObjectCreated:*</code> · <code>s3:ObjectRemoved:*</code> ·{' '}
+                <code>s3:ObjectRestore:*</code> · <code>s3:LifecycleExpiration:*</code>
+              </p>
+            </div>
+            <div className="s3-card green">
+              <h4>Destinations</h4>
+              <p>SNS Topic · SQS Queue · Lambda Function · EventBridge</p>
+            </div>
+          </div>
+
+          <h3>7.3 S3 Transfer Acceleration</h3>
+          <p>ใช้ CloudFront edge locations รอบโลกเพื่อ accelerate uploads/downloads:</p>
+<pre><code>{`https://mybucket.s3-accelerate.amazonaws.com`}</code></pre>
+          <div className="s3-callout green">
+            เร็วขึ้นโดยเฉพาะ distance ที่ไกล — routing ผ่าน AWS backbone network แทน public internet
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 8 */}
+        <section id="s8" className="s3-section">
+          <h2><span className="num">8</span> S3 Batch Operations</h2>
+          <p>จัดการ object จำนวนมากใน operation เดียว:</p>
+          <div className="s3-grid-2">
+            <div className="s3-card">
+              <h4>Use Cases</h4>
+              <p>
+                • Copy/replicate existing objects<br />
+                • Replace ACLs หรือ tags<br />
+                • Invoke Lambda บน objects<br />
+                • Encrypt/decrypt objects<br />
+                • Create cross-region replicas
+              </p>
+            </div>
+            <div className="s3-card orange">
+              <h4>How It Works</h4>
+              <p>
+                1. สร้าง Job ระบุ objects ผ่าน Inventory manifest หรือ CSV<br />
+                2. S3 Batch Operations ประมวลผลทุก object<br />
+                3. ได้ Completion report พร้อมรายละเอียด failure
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 9 */}
+        <section id="s9" className="s3-section">
+          <h2><span className="num">9</span> Performance และ Optimization</h2>
+
+          <h3>9.1 S3 Request Rate</h3>
+          <div className="s3-callout">
+            <strong>3,500 PUT/COPY/POST/DELETE</strong> และ <strong>5,500 GET/HEAD</strong> ต่อวินาที ต่อ prefix —
+            ไม่มี limits ต่อ bucket
+          </div>
+
+          <h3>9.2 Performance Best Practices</h3>
+          <ul>
+            <li>
+              <strong>Randomize prefix</strong> — กระจาย requests ข้าม prefixes ด้วย key naming ที่ random
+              (เช่น เพิ่ม hash หรือ UUID)
+            </li>
+            <li><strong>CloudFront</strong> — cache GET requests ลด request load บน S3</li>
+            <li><strong>Multipart Upload</strong> — แบ่ง upload หลายส่วน parallel</li>
+            <li><strong>S3 Transfer Acceleration</strong> — ใช้ edge locations สำหรับ uploads จาก remote locations</li>
+            <li><strong>S3 Select</strong> — query เฉพาะ data ที่ต้องการแทนดึงทั้งไฟล์</li>
+          </ul>
+
+          <h3>9.3 Multipart Upload Optimization</h3>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Part Size</th><th>Use Case</th></tr></thead>
+              <tbody>
+                <tr><td><strong>8–64 MB</strong></td><td>Standard large files</td></tr>
+                <tr><td><strong>512 MB</strong></td><td>Very large files (maximum parallelism)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 10 */}
+        <section id="s10" className="s3-section">
+          <h2><span className="num">10</span> Monitoring และ Logging</h2>
+
+          <h3>10.1 CloudWatch Metrics</h3>
+          <div className="s3-grid-2">
+            <div className="s3-card">
+              <h4>Bucket-level (ฟรี)</h4>
+              <p>
+                BucketSizeBytes · NumberOfObjects · AllRequests · GetRequests · PutRequests ·
+                BytesDownloaded · BytesUploaded
+              </p>
+            </div>
+            <div className="s3-card green">
+              <h4>Request-level (มีค่าใช้จ่าย)</h4>
+              <p>4xxErrors · 5xxErrors · FirstByteLatency · TotalRequestLatency · SelectRequests</p>
+            </div>
+          </div>
+
+          <h3>10.2 S3 Server Access Logging</h3>
+          <p>Log ทุก request ที่เข้ามายัง bucket ใน Apache Common Log Format:</p>
+<pre><code>{`aws s3api put-bucket-logging \\
+  --bucket source-bucket \\
+  --bucket-logging-status '{
+    "LoggingEnabled": {
+      "TargetBucket": "my-log-bucket",
+      "TargetPrefix": "logs/"
+    }
+  }'`}</code></pre>
+
+          <h3>10.3 AWS CloudTrail</h3>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Event Type</th><th>Examples</th><th>ค่าใช้จ่าย</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Management Events</strong></td><td>CreateBucket, DeleteBucket, PutBucketPolicy</td><td>ฟรี (default)</td></tr>
+                <tr><td><strong>Data Events</strong></td><td>GetObject, PutObject, DeleteObject</td><td>มีค่าใช้จ่าย — enable แยก</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>10.4 S3 Inventory และ Analytics</h3>
+          <div className="s3-grid-2">
+            <div className="s3-card">
+              <h4>S3 Inventory</h4>
+              <p>
+                สร้างรายงาน contents เป็น Parquet หรือ CSV — ใช้สำหรับ audit, compliance,
+                หรือสร้าง Batch Operations manifest
+              </p>
+            </div>
+            <div className="s3-card green">
+              <h4>S3 Analytics</h4>
+              <p>Storage Class Analysis — แนะนำ lifecycle rules โดยวิเคราะห์ access patterns อัตโนมัติ (ฟรี)</p>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 11 */}
+        <section id="s11" className="s3-section">
+          <h2><span className="num">11</span> Static Website Hosting</h2>
+          <p>S3 สามารถ host static website ได้ทันที:</p>
+<pre><code>{`aws s3 website s3://my-bucket/ \\
+  --index-document index.html \\
+  --error-document error.html`}</code></pre>
+          <div className="s3-callout orange">
+            <strong>หมายเหตุ:</strong> Website endpoints ไม่ใช่ HTTPS — ถ้าต้องการ HTTPS ใช้{' '}
+            <strong>CloudFront + OAI</strong> หรือ S3 + CloudFront custom domain
+          </div>
+          <p>
+            <strong>Website endpoint format:</strong>
+          </p>
+<pre><code>{`http://my-bucket.s3-website.<region>.amazonaws.com`}</code></pre>
+          <h3>ขั้นตอน</h3>
+          <ol>
+            <li>เปิด Static website hosting ใน bucket properties</li>
+            <li>เปิด Block public access (หรือใช้ CloudFront)</li>
+            <li>เพิ่ม bucket policy ให้ public read สำหรับ objects</li>
+          </ol>
+        </section>
+
+        <hr />
+
+        {/* SECTION 12 */}
+        <section id="s12" className="s3-section">
+          <h2><span className="num">12</span> Pricing</h2>
+
+          <h3>12.1 Storage Pricing (us-east-1 approx.)</h3>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Storage Class</th><th>ราคาต่อ GB/เดือน</th></tr></thead>
+              <tbody>
+                <tr><td>S3 Standard</td><td>~$0.023</td></tr>
+                <tr><td>S3 Intelligent-Tiering</td><td>~$0.023 + monitoring fee</td></tr>
+                <tr><td>S3 Standard-IA</td><td>~$0.0125</td></tr>
+                <tr><td>S3 Glacier Instant</td><td>~$0.004</td></tr>
+                <tr><td>S3 Glacier Flexible</td><td>~$0.0036</td></tr>
+                <tr><td>S3 Glacier Deep Archive</td><td>~$0.00099</td></tr>
+                <tr><td>S3 One Zone-IA</td><td>~$0.01</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>12.2 Data Transfer</h3>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Transfer</th><th>ค่าบริการ</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Data IN to S3</strong></td><td>ฟรี</td></tr>
+                <tr><td><strong>Data OUT to Internet</strong></td><td>$0.09/GB (first 10 TB/เดือน)</td></tr>
+                <tr><td><strong>Data OUT to CloudFront</strong></td><td>ฟรี</td></tr>
+                <tr><td><strong>Data OUT to same Region EC2</strong></td><td>ฟรี (private IP)</td></tr>
+                <tr><td><strong>Inter-region replication</strong></td><td>$0.02–$0.09/GB</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>12.3 Cost Optimization Strategies</h3>
+          <div className="s3-grid-2">
+            <div className="s3-card green">
+              <h4>ใช้ S3 Intelligent-Tiering</h4>
+              <p>ลดค่าใช้จ่ายโดยอัตโนมัติเมื่อ access pattern เปลี่ยน</p>
+            </div>
+            <div className="s3-card orange">
+              <h4>Lifecycle Policies</h4>
+              <p>ย้ายไป storage class ที่ถูกกว่าเมื่อไม่เข้าถึงบ่อย</p>
+            </div>
+            <div className="s3-card">
+              <h4>Glacier สำหรับ Archival</h4>
+              <p>ถูกกว่า Standard มากสำหรับ long-term retention</p>
+            </div>
+            <div className="s3-card yellow">
+              <h4>Abort Incomplete Multipart</h4>
+              <p>ป้องกันค่าใช้จ่ายจาก orphaned upload parts</p>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 13 */}
+        <section id="s13" className="s3-section">
+          <h2><span className="num">13</span> Use Cases หลัก</h2>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Use Case</th><th>Storage Class</th><th>Key Features</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Static Website</strong></td><td>S3 Standard</td><td>Static hosting, CloudFront</td></tr>
+                <tr><td><strong>Data Lake</strong></td><td>Standard + Intelligent-Tiering</td><td>S3 Select, Lake Formation, Athena</td></tr>
+                <tr><td><strong>Backup & DR</strong></td><td>Standard-IA / Glacier</td><td>CRR, Object Lock</td></tr>
+                <tr><td><strong>Archival</strong></td><td>Glacier / Deep Archive</td><td>Object Lock Compliance, Vault Lock</td></tr>
+                <tr><td><strong>ML / AI Data</strong></td><td>S3 Standard</td><td>S3 Select, SageMaker, Data Lake</td></tr>
+                <tr><td><strong>Log Storage</strong></td><td>One Zone-IA / Standard-IA</td><td>Lifecycle rules, Analytics</td></tr>
+                <tr><td><strong>Compliance / WORM</strong></td><td>S3 + Object Lock</td><td>Governance/Compliance, Legal Hold</td></tr>
+                <tr><td><strong>Media Streaming</strong></td><td>S3 Standard + CloudFront</td><td>HLS/DASH via CloudFront</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 14 */}
+        <section id="s14" className="s3-section">
+          <h2><span className="num">14</span> AWS Services Integration</h2>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>Service</th><th>S3 Integration</th></tr></thead>
+              <tbody>
+                <tr><td><strong>CloudFront</strong></td><td>CDN cache, edge delivery</td></tr>
+                <tr><td><strong>Lambda</strong></td><td>Event-driven processing บน S3 events</td></tr>
+                <tr><td><strong>Athena</strong></td><td>Query S3 data directly ด้วย SQL</td></tr>
+                <tr><td><strong>Glue</strong></td><td>ETL, Data Catalog</td></tr>
+                <tr><td><strong>SageMaker</strong></td><td>ML training data, model artifacts</td></tr>
+                <tr><td><strong>EMR</strong></td><td>Spark/Hadoop บน S3 data</td></tr>
+                <tr><td><strong>Redshift Spectrum</strong></td><td>Query S3 จาก Redshift</td></tr>
+                <tr><td><strong>AWS Backup</strong></td><td>Centralized backup รวม S3</td></tr>
+                <tr><td><strong>Storage Gateway</strong></td><td>Hybrid storage (File/Tape Gateway)</td></tr>
+                <tr><td><strong>EventBridge</strong></td><td>Advanced event routing จาก S3</td></tr>
+                <tr><td><strong>KMS</strong></td><td>SSE-KMS encryption</td></tr>
+                <tr><td><strong>CloudTrail</strong></td><td>API call logging</td></tr>
+                <tr><td><strong>CloudWatch</strong></td><td>Metrics, alarms, dashboards</td></tr>
+                <tr><td><strong>Lake Formation</strong></td><td>Data lake governance</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 15 */}
+        <section id="s15" className="s3-section">
+          <h2><span className="num">15</span> Glossary</h2>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>คำศัพท์</th><th>ความหมาย</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Bucket</strong></td><td>Container สำหรับเก็บ objects</td></tr>
+                <tr><td><strong>Object</strong></td><td>ไฟล์ใน S3 — key + value + metadata + version ID + tags</td></tr>
+                <tr><td><strong>Key</strong></td><td>ชื่อ object รวม path (เช่น <code>photos/vacation.jpg</code>)</td></tr>
+                <tr><td><strong>Prefix</strong></td><td>ส่วนของ key ก่อน delimiter (เช่น <code>photos/</code>)</td></tr>
+                <tr><td><strong>SSE</strong></td><td>Server-Side Encryption — เข้ารหัสที่ S3 ก่อนเก็บ</td></tr>
+                <tr><td><strong>CSE</strong></td><td>Client-Side Encryption — เข้ารหัสก่อน upload เอง</td></tr>
+                <tr><td><strong>CRR</strong></td><td>Cross-Region Replication — replicate ข้าม region</td></tr>
+                <tr><td><strong>SRR</strong></td><td>Same-Region Replication — replicate ใน region เดียว</td></tr>
+                <tr><td><strong>WORM</strong></td><td>Write Once Read Many — immutable storage</td></tr>
+                <tr><td><strong>Multipart Upload</strong></td><td>แบ่ง upload เป็นหลายส่วนสำหรับไฟล์ใหญ่</td></tr>
+                <tr><td><strong>Lifecycle Policy</strong></td><td>Rules อัตโนมัติสำหรับ transition/expiration</td></tr>
+                <tr><td><strong>S3 Select</strong></td><td>Query object โดยตรงด้วย SQL-like syntax</td></tr>
+                <tr><td><strong>Access Point</strong></td><td>Named endpoint สำหรับเข้าถึง bucket</td></tr>
+                <tr><td><strong>Object Lock</strong></td><td>WORM storage สำหรับ objects</td></tr>
+                <tr><td><strong>Version ID</strong></td><td>Unique ID สำหรับแต่ละ version ของ object</td></tr>
+                <tr><td><strong>Delete Marker</strong></td><td>Marker ที่สร้างขึ้นเมื่อ delete object ใน versioned bucket</td></tr>
+                <tr><td><strong>Transfer Acceleration</strong></td><td>ใช้ CloudFront edge เพื่อเร่ง upload/download</td></tr>
+                <tr><td><strong>Batch Operations</strong></td><td>จัดการ object จำนวนมากใน operation เดียว</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <hr />
+
+        {/* SECTION 16 */}
+        <section id="s16" className="s3-section">
+          <h2><span className="num">16</span> ลิงค์อ้างอิง</h2>
+          <div className="s3-table-wrap">
+            <table className="s3-table">
+              <thead><tr><th>เนื้อหา</th><th>ลิงค์</th></tr></thead>
+              <tbody>
+                <tr><td>Amazon S3 User Guide</td><td><a href="https://docs.aws.amazon.com/s3/" target="_blank" rel="noopener noreferrer">docs.aws.amazon.com/s3</a></td></tr>
+                <tr><td>S3 Storage Classes</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html" target="_blank" rel="noopener noreferrer">Storage Classes Intro</a></td></tr>
+                <tr><td>S3 API Reference</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/API/" target="_blank" rel="noopener noreferrer">API Reference</a></td></tr>
+                <tr><td>S3 Pricing</td><td><a href="https://aws.amazon.com/s3/pricing/" target="_blank" rel="noopener noreferrer">aws.amazon.com/s3/pricing</a></td></tr>
+                <tr><td>S3 Replication</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html" target="_blank" rel="noopener noreferrer">Replication Guide</a></td></tr>
+                <tr><td>S3 Lifecycle</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html" target="_blank" rel="noopener noreferrer">Lifecycle Management</a></td></tr>
+                <tr><td>S3 Object Lock</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html" target="_blank" rel="noopener noreferrer">Object Lock</a></td></tr>
+                <tr><td>S3 Versioning</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html" target="_blank" rel="noopener noreferrer">Versioning</a></td></tr>
+                <tr><td>S3 Encryption</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html" target="_blank" rel="noopener noreferrer">Encryption Guide</a></td></tr>
+                <tr><td>S3 Access Points</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html" target="_blank" rel="noopener noreferrer">Access Points</a></td></tr>
+                <tr><td>S3 Multipart Upload</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html" target="_blank" rel="noopener noreferrer">Multipart Upload</a></td></tr>
+                <tr><td>S3 Select</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html" target="_blank" rel="noopener noreferrer">S3 Select</a></td></tr>
+                <tr><td>S3 Batch Operations</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops.html" target="_blank" rel="noopener noreferrer">Batch Operations</a></td></tr>
+                <tr><td>S3 Static Website</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html" target="_blank" rel="noopener noreferrer">Website Hosting</a></td></tr>
+                <tr><td>S3 VPC Endpoints</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/vpc-endpoints.html" target="_blank" rel="noopener noreferrer">VPC Endpoints</a></td></tr>
+                <tr><td>S3 Transfer Acceleration</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration.html" target="_blank" rel="noopener noreferrer">Transfer Acceleration</a></td></tr>
+                <tr><td>CloudWatch S3 Metrics</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/monitoring-automated-manual.html" target="_blank" rel="noopener noreferrer">Monitoring Guide</a></td></tr>
+                <tr><td>AWS CLI for S3</td><td><a href="https://docs.aws.amazon.com/cli/latest/reference/s3/" target="_blank" rel="noopener noreferrer">CLI Reference</a></td></tr>
+                <tr><td>S3 Express One Zone</td><td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-OneZone.html" target="_blank" rel="noopener noreferrer">S3 Express</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  )
+}
