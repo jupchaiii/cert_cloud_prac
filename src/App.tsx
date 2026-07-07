@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import S3Page from './pages/S3Page'
 import RDSPage from './pages/RDSPage'
+import LoggingPage from './pages/LoggingPage'
 import './App.css'
 
 function Home() {
@@ -48,6 +49,21 @@ function Home() {
             </li>
           </ul>
         </div>
+        <div id="docs">
+          <svg className="icon" role="presentation" aria-hidden="true">
+            <use href="/icons.svg#documentation-icon"></use>
+          </svg>
+          <h2>📋 Logging &amp; Monitoring</h2>
+          <p>Observability ครบวงจร</p>
+          <ul>
+            <li>
+              <Link to="/logging">
+                <img className="logo" src="/react.svg" alt="" />
+                AWS Logging — CloudWatch, CloudTrail, VPC
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
@@ -91,6 +107,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/s3" element={<S3Page />} />
       <Route path="/rds" element={<RDSPage />} />
+      <Route path="/logging" element={<LoggingPage />} />
       <Route path="/ec2" element={<EC2Placeholder />} />
     </Routes>
   )
