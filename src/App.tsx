@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import S3Page from './pages/S3Page'
+import RDSPage from './pages/RDSPage'
 import './App.css'
 
 function Home() {
@@ -31,6 +32,12 @@ function Home() {
               <Link to="/s3">
                 <img className="logo" src="/react.svg" alt="" />
                 Amazon S3 — Storage
+              </Link>
+            </li>
+            <li>
+              <Link to="/rds">
+                <img className="logo" src="/react.svg" alt="" />
+                Amazon RDS — Database
               </Link>
             </li>
             <li>
@@ -69,7 +76,7 @@ function Home() {
 function EC2Placeholder() {
   return (
     <div style={{ padding: '4rem 2rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-      <h1 style={{ color: 'var(--text)', marginBottom: '1rem' }}>Amazon EC2</h1>
+      <h1 style={{ color: 'var(--text-h)', marginBottom: '1rem' }}>Amazon EC2</h1>
       <p>Coming soon — EC2 detailed guide</p>
       <Link to="/" style={{ color: 'var(--accent)', marginTop: '1rem', display: 'inline-block' }}>
         ← Back to Home
@@ -83,6 +90,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/s3" element={<S3Page />} />
+      <Route path="/rds" element={<RDSPage />} />
       <Route path="/ec2" element={<EC2Placeholder />} />
     </Routes>
   )
