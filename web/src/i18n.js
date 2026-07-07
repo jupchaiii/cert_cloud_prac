@@ -41,8 +41,8 @@ const dict = {
       switchTo: 'EN',
     },
     footer: {
-      builtWith: 'สร้างด้วย React + Vite',
-      source: 'ต้นฉบับ',
+      builtWith: '',
+      source: 'GitHub',
     },
   },
   en: {
@@ -85,8 +85,8 @@ const dict = {
       switchTo: 'TH',
     },
     footer: {
-      builtWith: 'Built with React + Vite',
-      source: 'Source',
+      builtWith: '',
+      source: 'GitHub',
     },
   },
 };
